@@ -58,3 +58,9 @@ Windows、Node.js 24.20.0 / npm 11.17.0、Python 3.14.7、Playwright 1.58.2、Ch
 ## 提出用チェックアウト
 
 現在の作業ルートでは`.git/index.lock`の作成が権限で拒否された。読み取り専用のGitメタデータを変更せず、`.work/submission`に対象リポジトリの新しい分離チェックアウトを作り、検証したソース・文書・画像のみを同じ作業ブランチへ移してcommit・pushする。元の作業ファイルは保全する。提出ソースは上記source-manifestと一致を確認し、参照コピー・依存フォルダー・一時ファイルは含めない。
+
+## GitHub Actions
+
+初回HEAD `e7df0967e95c6ec86d4d47cd3b935179dd83a7ff`の[push run](https://github.com/tetsujisugimori-coder/programming-learning-lab/actions/runs/42009048887)と[PR run](https://github.com/tetsujisugimori-coder/programming-learning-lab/actions/runs/42009112914)は、lint・型検査・build・Python 3.14.9による9通常例／1エラー例まで成功。`ubuntu-latest`がUbuntu26.04で、Playwright1.58.2が未対応としてブラウザー導入を拒否したため、ブラウザーCIは未実施だった。対応表を確認して`ubuntu-24.04`へ固定し、同じ検査手順を再実行する。これは環境を固定するCI修正であり、教材の動作失敗ではない。ローカルで検証した16ファイルは変更しない。
+
+併せて、旧ActionのNode20非推奨警告を解消するため、公式リポジトリの最新releaseとaction.ymlを確認し、Node24 runtimeを使うcheckout7.0.1 / setup-node7.1.0 / setup-python7.1.0 / upload-artifact7.0.2へ固定した。node-version、python-version、cache、pathの入力契約も確認（2026-11-05）。
