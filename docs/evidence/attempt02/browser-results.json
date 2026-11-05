@@ -1,0 +1,1395 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\playwright.config.ts",
+    "rootDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-1280",
+        "name": "chromium-1280",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-390",
+        "name": "chromium-390",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-375",
+        "name": "chromium-375",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-1280",
+        "name": "webkit-1280",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-390",
+        "name": "webkit-390",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-375",
+        "name": "webkit-375",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 43871 --strictPort",
+      "url": "http://127.0.0.1:43871",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "learning.spec.ts",
+      "file": "learning.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-1280",
+              "projectName": "chromium-1280",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6357,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 54,
+                      "line": 44
+                    },
+                    "snippet": "  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution."
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 54,
+                        "line": 44
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n\n  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution.\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:24:33.483Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-chromium-1280\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-chromium-1280\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 54,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-94965c2b4e13b35f49d1",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-1280",
+              "projectName": "chromium-1280",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:24:42.351Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-381e87248fd435435bcb",
+          "file": "learning.spec.ts",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-1280",
+              "projectName": "chromium-1280",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 589,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m65\u001b[39m\nReceived:   \u001b[31m65\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m65\u001b[39m\nReceived:   \u001b[31m65\u001b[39m\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:147:63",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 63,
+                      "line": 147
+                    },
+                    "snippet": "  145 |     await page.mouse.move(box!.x - 100, box!.y + 30);\n  146 |     await page.mouse.up();\n> 147 |     expect(Number(await split.getAttribute('aria-valuenow'))).toBeLessThan(65);\n      |                                                               ^\n  148 |     await page.locator('#reset-split').click();\n  149 |     await expect(split).toHaveAttribute('aria-valuenow', '50');\n  150 |     const left = await article.locator('.explanation').boundingBox();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 63,
+                        "line": 147
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m65\u001b[39m\nReceived:   \u001b[31m65\u001b[39m\n\n  145 |     await page.mouse.move(box!.x - 100, box!.y + 30);\n  146 |     await page.mouse.up();\n> 147 |     expect(Number(await split.getAttribute('aria-valuenow'))).toBeLessThan(65);\n      |                                                               ^\n  148 |     await page.locator('#reset-split').click();\n  149 |     await expect(split).toHaveAttribute('aria-valuenow', '50');\n  150 |     const left = await article.locator('.explanation').boundingBox();\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:147:63"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:24:43.444Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-keyboard-split-in-36758-argement-and-reduced-motion-chromium-1280\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-keyboard-split-in-36758-argement-and-reduced-motion-chromium-1280\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 63,
+                    "line": 147
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-73a2d554664dcbc3590d",
+          "file": "learning.spec.ts",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "native clipboard result and paste (no API mock)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "native-clipboard",
+                  "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-1280",
+              "projectName": "chromium-1280",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 310,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:24:45.079Z",
+                  "annotations": [
+                    {
+                      "type": "native-clipboard",
+                      "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-696c9804aee53b5b65a3",
+          "file": "learning.spec.ts",
+          "line": 173,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-390",
+              "projectName": "chromium-390",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4586,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 54,
+                      "line": 44
+                    },
+                    "snippet": "  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution."
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 54,
+                        "line": 44
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n\n  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution.\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:24:47.063Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-chromium-390\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-chromium-390\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 54,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-dfe9f980e3694c46d9f0",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-390",
+              "projectName": "chromium-390",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 474,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:24:53.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-cb57c950ab43a48a2fc7",
+          "file": "learning.spec.ts",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-390",
+              "projectName": "chromium-390",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1302,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:24:54.913Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-5b4ab00cf2513b6f7739",
+          "file": "learning.spec.ts",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "native clipboard result and paste (no API mock)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "native-clipboard",
+                  "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-390",
+              "projectName": "chromium-390",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 368,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:24:56.240Z",
+                  "annotations": [
+                    {
+                      "type": "native-clipboard",
+                      "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-1db3dd832fe24365d3df",
+          "file": "learning.spec.ts",
+          "line": 173,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-375",
+              "projectName": "chromium-375",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5361,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 54,
+                      "line": 44
+                    },
+                    "snippet": "  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution."
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 54,
+                        "line": 44
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n\n  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution.\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:24:57.713Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-chromium-375\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-chromium-375\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 54,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-6160fed2bdf569c68e4f",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-375",
+              "projectName": "chromium-375",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 496,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:05.273Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-f17bc0bd985a4de8b70d",
+          "file": "learning.spec.ts",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-375",
+              "projectName": "chromium-375",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1291,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:06.332Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-581d2850ea730211c1c4",
+          "file": "learning.spec.ts",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "native clipboard result and paste (no API mock)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "native-clipboard",
+                  "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-375",
+              "projectName": "chromium-375",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 382,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:07.645Z",
+                  "annotations": [
+                    {
+                      "type": "native-clipboard",
+                      "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-12cc3fadba0ff0d80d1b",
+          "file": "learning.spec.ts",
+          "line": 173,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-1280",
+              "projectName": "webkit-1280",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 17976,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 54,
+                      "line": 44
+                    },
+                    "snippet": "  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution."
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 54,
+                        "line": 44
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n\n  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution.\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:09.055Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-webkit-1280\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-webkit-1280\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 54,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-8bea8e6d6d32e7eba8d6",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-1280",
+              "projectName": "webkit-1280",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1079,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:28.823Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-af878a5bc7a58aa8f4bb",
+          "file": "learning.spec.ts",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-1280",
+              "projectName": "webkit-1280",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 648,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m65\u001b[39m\nReceived:   \u001b[31m65\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m65\u001b[39m\nReceived:   \u001b[31m65\u001b[39m\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:147:63",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 63,
+                      "line": 147
+                    },
+                    "snippet": "  145 |     await page.mouse.move(box!.x - 100, box!.y + 30);\n  146 |     await page.mouse.up();\n> 147 |     expect(Number(await split.getAttribute('aria-valuenow'))).toBeLessThan(65);\n      |                                                               ^\n  148 |     await page.locator('#reset-split').click();\n  149 |     await expect(split).toHaveAttribute('aria-valuenow', '50');\n  150 |     const left = await article.locator('.explanation').boundingBox();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 63,
+                        "line": 147
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m65\u001b[39m\nReceived:   \u001b[31m65\u001b[39m\n\n  145 |     await page.mouse.move(box!.x - 100, box!.y + 30);\n  146 |     await page.mouse.up();\n> 147 |     expect(Number(await split.getAttribute('aria-valuenow'))).toBeLessThan(65);\n      |                                                               ^\n  148 |     await page.locator('#reset-split').click();\n  149 |     await expect(split).toHaveAttribute('aria-valuenow', '50');\n  150 |     const left = await article.locator('.explanation').boundingBox();\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:147:63"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:30.067Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-keyboard-split-in-36758-argement-and-reduced-motion-webkit-1280\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-keyboard-split-in-36758-argement-and-reduced-motion-webkit-1280\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 63,
+                    "line": 147
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-3b45f07ab51afa0fff1e",
+          "file": "learning.spec.ts",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "native clipboard result and paste (no API mock)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-1280",
+              "projectName": "webkit-1280",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5994,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#py-ch01-first-print textarea')\nExpected: \u001b[32m\"print(\\\"こんにちは\\\")\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#py-ch01-first-print textarea')\u001b[22m\n\u001b[2m    9 × locator resolved to <textarea rows=\"4\" placeholder=\"いまの予想を、自分の言葉で…\" id=\"py-ch01-first-print-notes\" aria-describedby=\"py-ch01-first-print-notes-help\"></textarea>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#py-ch01-first-print textarea')\nExpected: \u001b[32m\"print(\\\"こんにちは\\\")\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#py-ch01-first-print textarea')\u001b[22m\n\u001b[2m    9 × locator resolved to <textarea rows=\"4\" placeholder=\"いまの予想を、自分の言葉で…\" id=\"py-ch01-first-print-notes\" aria-describedby=\"py-ch01-first-print-notes-help\"></textarea>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:185:25",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 25,
+                      "line": 185
+                    },
+                    "snippet": "  183 |     await notes.focus();\n  184 |     await page.keyboard.press('Control+V');\n> 185 |     await expect(notes).toHaveValue('print(\"こんにちは\")');\n      |                         ^\n  186 |   }\n  187 |   test.info().annotations.push({ type: 'native-clipboard', description: `${browserName}: ${await status.textContent()}` });\n  188 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 25,
+                        "line": 185
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#py-ch01-first-print textarea')\nExpected: \u001b[32m\"print(\\\"こんにちは\\\")\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#py-ch01-first-print textarea')\u001b[22m\n\u001b[2m    9 × locator resolved to <textarea rows=\"4\" placeholder=\"いまの予想を、自分の言葉で…\" id=\"py-ch01-first-print-notes\" aria-describedby=\"py-ch01-first-print-notes-help\"></textarea>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n\n  183 |     await notes.focus();\n  184 |     await page.keyboard.press('Control+V');\n> 185 |     await expect(notes).toHaveValue('print(\"こんにちは\")');\n      |                         ^\n  186 |   }\n  187 |   test.info().annotations.push({ type: 'native-clipboard', description: `${browserName}: ${await status.textContent()}` });\n  188 | });\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:185:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:31.648Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-native-clipboard-result-and-paste-no-API-mock--webkit-1280\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-native-clipboard-result-and-paste-no-API-mock--webkit-1280\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 25,
+                    "line": 185
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-485971b2491da0b64f34",
+          "file": "learning.spec.ts",
+          "line": 173,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-390",
+              "projectName": "webkit-390",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12753,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 54,
+                      "line": 44
+                    },
+                    "snippet": "  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution."
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 54,
+                        "line": 44
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n\n  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution.\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:38.993Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-webkit-390\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-webkit-390\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 54,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-a96470ceabdacef6890d",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-390",
+              "projectName": "webkit-390",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:53.318Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-357e42d26d087341d534",
+          "file": "learning.spec.ts",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-390",
+              "projectName": "webkit-390",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2940,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:54.379Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-928e3cdb52fe9d218207",
+          "file": "learning.spec.ts",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "native clipboard result and paste (no API mock)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-390",
+              "projectName": "webkit-390",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6222,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#py-ch01-first-print textarea')\nExpected: \u001b[32m\"print(\\\"こんにちは\\\")\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#py-ch01-first-print textarea')\u001b[22m\n\u001b[2m    9 × locator resolved to <textarea rows=\"4\" placeholder=\"いまの予想を、自分の言葉で…\" id=\"py-ch01-first-print-notes\" aria-describedby=\"py-ch01-first-print-notes-help\"></textarea>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#py-ch01-first-print textarea')\nExpected: \u001b[32m\"print(\\\"こんにちは\\\")\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#py-ch01-first-print textarea')\u001b[22m\n\u001b[2m    9 × locator resolved to <textarea rows=\"4\" placeholder=\"いまの予想を、自分の言葉で…\" id=\"py-ch01-first-print-notes\" aria-describedby=\"py-ch01-first-print-notes-help\"></textarea>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:185:25",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 25,
+                      "line": 185
+                    },
+                    "snippet": "  183 |     await notes.focus();\n  184 |     await page.keyboard.press('Control+V');\n> 185 |     await expect(notes).toHaveValue('print(\"こんにちは\")');\n      |                         ^\n  186 |   }\n  187 |   test.info().annotations.push({ type: 'native-clipboard', description: `${browserName}: ${await status.textContent()}` });\n  188 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 25,
+                        "line": 185
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#py-ch01-first-print textarea')\nExpected: \u001b[32m\"print(\\\"こんにちは\\\")\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#py-ch01-first-print textarea')\u001b[22m\n\u001b[2m    9 × locator resolved to <textarea rows=\"4\" placeholder=\"いまの予想を、自分の言葉で…\" id=\"py-ch01-first-print-notes\" aria-describedby=\"py-ch01-first-print-notes-help\"></textarea>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n\n  183 |     await notes.focus();\n  184 |     await page.keyboard.press('Control+V');\n> 185 |     await expect(notes).toHaveValue('print(\"こんにちは\")');\n      |                         ^\n  186 |   }\n  187 |   test.info().annotations.push({ type: 'native-clipboard', description: `${browserName}: ${await status.textContent()}` });\n  188 | });\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:185:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:25:57.348Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-native-clipboard-result-and-paste-no-API-mock--webkit-390\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-native-clipboard-result-and-paste-no-API-mock--webkit-390\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 25,
+                    "line": 185
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-de5d627586d2963ffe58",
+          "file": "learning.spec.ts",
+          "line": 173,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-375",
+              "projectName": "webkit-375",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13298,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 54,
+                      "line": 44
+                    },
+                    "snippet": "  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution."
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 54,
+                        "line": 44
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary') resolved to 2 elements:\n    1) <summary>解答例</summary> aka getByLabel('初めてのprint').getByText('解答例')\n    2) <summary>表示例を見る</summary> aka getByText('表示例を見る').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('#py-ch01-first-print').locator('[data-hint=\"2\"] summary')\u001b[22m\n\n\n  42 |     await article.locator('[data-hint=\"1\"] summary').click();\n  43 |     await expect(article.locator('[data-hint=\"2\"]')).toBeVisible();\n> 44 |     await article.locator('[data-hint=\"2\"] summary').click();\n     |                                                      ^\n  45 |     if (lesson.solution) await expect(article.locator(`[data-example=\"${lesson.solution.id}\"] code`)).toHaveText(lesson.solution.code);\n  46 |     await article.locator('[data-record=\"read\"]').check();\n  47 |     // Explicitly selecting a correct answer does not imply PC execution.\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:44:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:26:04.878Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-webkit-375\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-all-eight-lessons-e8358-ords-round-trips-and-reload-webkit-375\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 54,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-9e890e693b151c944c55",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-375",
+              "projectName": "webkit-375",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1026,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:26:19.753Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-d05dc76b659ea3857ba0",
+          "file": "learning.spec.ts",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-375",
+              "projectName": "webkit-375",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2634,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:26:20.844Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-27baeee94f77e04d7d8e",
+          "file": "learning.spec.ts",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "native clipboard result and paste (no API mock)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-375",
+              "projectName": "webkit-375",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6309,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#py-ch01-first-print textarea')\nExpected: \u001b[32m\"print(\\\"こんにちは\\\")\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#py-ch01-first-print textarea')\u001b[22m\n\u001b[2m    8 × locator resolved to <textarea rows=\"4\" placeholder=\"いまの予想を、自分の言葉で…\" id=\"py-ch01-first-print-notes\" aria-describedby=\"py-ch01-first-print-notes-help\"></textarea>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#py-ch01-first-print textarea')\nExpected: \u001b[32m\"print(\\\"こんにちは\\\")\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#py-ch01-first-print textarea')\u001b[22m\n\u001b[2m    8 × locator resolved to <textarea rows=\"4\" placeholder=\"いまの予想を、自分の言葉で…\" id=\"py-ch01-first-print-notes\" aria-describedby=\"py-ch01-first-print-notes-help\"></textarea>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:185:25",
+                    "location": {
+                      "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                      "column": 25,
+                      "line": 185
+                    },
+                    "snippet": "  183 |     await notes.focus();\n  184 |     await page.keyboard.press('Control+V');\n> 185 |     await expect(notes).toHaveValue('print(\"こんにちは\")');\n      |                         ^\n  186 |   }\n  187 |   test.info().annotations.push({ type: 'native-clipboard', description: `${browserName}: ${await status.textContent()}` });\n  188 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "column": 25,
+                        "line": 185
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#py-ch01-first-print textarea')\nExpected: \u001b[32m\"print(\\\"こんにちは\\\")\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#py-ch01-first-print textarea')\u001b[22m\n\u001b[2m    8 × locator resolved to <textarea rows=\"4\" placeholder=\"いまの予想を、自分の言葉で…\" id=\"py-ch01-first-print-notes\" aria-describedby=\"py-ch01-first-print-notes-help\"></textarea>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n\n  183 |     await notes.focus();\n  184 |     await page.keyboard.press('Control+V');\n> 185 |     await expect(notes).toHaveValue('print(\"こんにちは\")');\n      |                         ^\n  186 |   }\n  187 |   test.info().annotations.push({ type: 'native-clipboard', description: `${browserName}: ${await status.textContent()}` });\n  188 | });\n    at C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts:185:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T06:26:23.515Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-native-clipboard-result-and-paste-no-API-mock--webkit-375\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\test-results\\learning-native-clipboard-result-and-paste-no-API-mock--webkit-375\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "column": 25,
+                    "line": 185
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-25d577aa3fc9e7c64b12",
+          "file": "learning.spec.ts",
+          "line": 173,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T06:24:30.634Z",
+    "duration": 120633.706,
+    "expected": 13,
+    "skipped": 0,
+    "unexpected": 11,
+    "flaky": 0
+  }
+}

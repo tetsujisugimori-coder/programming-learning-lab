@@ -1,0 +1,200 @@
+import { test, expect, type Page } from '@playwright/test';
+import { lessons } from '../../src/curriculum';
+import { mkdirSync } from 'node:fs';
+
+const evidence = 'docs/evidence/screenshots';
+mkdirSync(evidence, { recursive: true });
+async function noOverflow(page: Page) {
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+}
+async function shot(page: Page, name: string, project: string) {
+  await page.screenshot({ path: `${evidence}/${project}-${name}.png`, fullPage: true });
+}
+
+test('all eight lessons: explicit grading, staged hints, records, round trips and reload', async ({ page }, info) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+  await page.goto('/');
+  await expect(page).toHaveTitle('Python基本編 | プログラム学習');
+  await shot(page, 'start', info.project.name);
+  for (const [index, lesson] of lessons.entries()) {
+    const article = page.locator(`#${lesson.id}`);
+    await expect(article).toBeVisible();
+    await article.locator('textarea').fill(`予想${index}：表示が変わる。\n自分の言葉で確認する。`);
+    const quiz = article.locator('.quiz');
+    await quiz.getByRole('button', { name: '回答を確認する' }).click();
+    await expect(quiz.locator('.quiz-feedback')).toContainText('まだ判定していません');
+    const wrong = 1 - lesson.quiz.correct;
+    await quiz.locator(`input[value="${wrong}"]`).check();
+    await expect(quiz.locator('.quiz-state')).toContainText('選択中・未判定');
+    await quiz.getByRole('button').click();
+    await expect(quiz.locator('.quiz-feedback')).toContainText(lesson.quiz.reasons[wrong]);
+    await expect(quiz.locator('.quiz-feedback')).toContainText('次のヒント');
+    await quiz.locator(`input[value="${lesson.quiz.correct}"]`).check();
+    await expect(quiz.locator('.quiz-state')).toContainText('選択中・未判定');
+    await quiz.getByRole('button').click();
+    await expect(quiz.locator('.quiz-feedback')).toContainText('✓ 正解');
+    await expect(quiz.locator('.quiz-feedback')).toContainText(lesson.quiz.reasons[lesson.quiz.correct]);
+    await expect(article.locator('[data-hint="1"]')).toBeHidden();
+    await expect(article.locator('[data-hint="2"]')).toBeHidden();
+    await article.locator('[data-hint="0"] summary').click();
+    await expect(article.locator('[data-hint="1"]')).toBeVisible();
+    await article.locator('[data-hint="1"] summary').click();
+    await expect(article.locator('[data-hint="2"]')).toBeVisible();
+    await article.locator('[data-hint="2"] > summary').click();
+    if (lesson.solution) await expect(article.locator(`[data-example="${lesson.solution.id}"] code`)).toHaveText(lesson.solution.code);
+    await article.locator('[data-record="read"]').check();
+    // Explicitly selecting a correct answer does not imply PC execution.
+    if (lesson.pc) {
+      await expect(article.locator('[data-record="pc"]')).not.toBeChecked();
+      await article.locator('[data-record="pc"]').check();
+    }
+    if (lesson.example?.output) await article.locator(`[data-example="${lesson.example.id}"] .output summary`).click();
+    await noOverflow(page);
+    if ([2, 3, 7].includes(index)) await shot(page, ['setup', 'print', 'task'][[2, 3, 7].indexOf(index)], info.project.name);
+    if (index < 7) await page.locator('#next').click();
+  }
+  await page.locator('#next').click();
+  await expect(page.locator('#reflection')).toBeVisible();
+  await expect(page.locator('#summary-counts')).toContainText('読了 8 / 8節 · 理解チェック正解 8 / 8問 · PC実行の自己申告 6 / 6節（未観測）');
+  await page.locator('[data-nav="5"]').click();
+  const change = page.locator(`#${lessons[5].id}`);
+  await expect(change.locator('textarea')).toHaveValue('予想5：表示が変わる。\n自分の言葉で確認する。');
+  await expect(change.locator('[data-hint="2"]')).toHaveAttribute('open', '');
+  await expect(change.locator('.quiz-state')).toContainText('理解チェック正解');
+  await change.locator('.quiz input[value="1"]').check();
+  await expect(change.locator('.quiz-state')).toContainText('未判定');
+  await expect(page.locator('#other-counts')).toContainText('理解チェック正解 7 / 8');
+  await page.locator('#show-chapters').click();
+  await expect(page.locator('.chapter-card')).toHaveCount(13);
+  await expect(page.locator('.chapter-card:not(.available) .status-label')).toHaveText(Array(12).fill('準備中'));
+  await expect(page.locator('.chapter-card:not(.available) button, .chapter-card:not(.available) a')).toHaveCount(0);
+  await noOverflow(page);
+  await shot(page, 'chapters', info.project.name);
+  await page.locator('#resume-lesson').click();
+  await expect(change.locator('textarea')).toHaveValue('予想5：表示が変わる。\n自分の言葉で確認する。');
+  await page.reload();
+  await expect(change.locator('textarea')).toHaveValue('');
+  await expect(change.locator('[data-hint="1"]')).toBeHidden();
+  await expect(change.locator('[data-record="pc"]')).not.toBeChecked();
+  await expect(page.locator('#read-count')).toHaveText('0 / 8');
+  expect(errors).toEqual([]);
+});
+
+test('copy resolves only after success, rejects honestly, copies exact authored text', async ({ page }) => {
+  await page.addInitScript(() => {
+    const clipboard = { writeText: async (text: string) => {
+      if (document.documentElement.dataset.copyMode === 'failure') throw new Error('test permission denied');
+      document.documentElement.dataset.copied = text;
+    } };
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: clipboard });
+  });
+  await page.goto('/#py-ch01-setup');
+  const command = page.locator('#py-ch01-setup [data-example="py-ch01-setup-command-0"]');
+  await command.getByRole('button').click();
+  await expect(command.locator('[role="status"]')).toHaveText('✓ コピーしました。');
+  expect(await page.locator('html').getAttribute('data-copied')).toBe('python --version');
+  await page.evaluate(() => { document.documentElement.dataset.copyMode = 'failure'; });
+  await command.getByRole('button').click();
+  await expect(command.locator('[role="status"]')).toContainText('コピーできませんでした');
+  await expect(command.locator('[role="status"]')).not.toContainText('コピーしました');
+  await page.evaluate(() => { document.documentElement.dataset.copyMode = 'success'; });
+  await page.locator('[data-nav="4"]').click();
+  const python = page.locator('[data-example="py-ch01-order-example"]');
+  await python.getByRole('button').click();
+  await expect(python.locator('[role="status"]')).toHaveText('✓ コピーしました。');
+  expect(await page.locator('html').getAttribute('data-copied')).toBe('print("朝です")\nprint("出かけよう")');
+});
+
+test('keyboard split, input composition, actual rem text enlargement and reduced motion', async ({ page }, info) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/#py-ch01-change');
+  const article = page.locator('#py-ch01-change');
+  const textarea = article.locator('textarea');
+  await textarea.focus();
+  await textarea.dispatchEvent('compositionstart', { data: '' });
+  await textarea.fill('日本語の予想：今日は雨');
+  await textarea.dispatchEvent('keydown', { key: 'Enter', isComposing: true, keyCode: 229 });
+  await textarea.dispatchEvent('compositionend', { data: '日本語の予想：今日は雨' });
+  await expect(article).toBeVisible();
+  await expect(textarea).toHaveValue('日本語の予想：今日は雨');
+  await expect(article.locator('.quiz-state')).toHaveText('未回答・未判定');
+  await article.locator('[data-hint="0"] summary').focus();
+  await page.keyboard.press('Enter');
+  await expect(article.locator('[data-hint="0"]')).toHaveAttribute('open', '');
+  await article.locator('.quiz input[value="0"]').focus();
+  await page.keyboard.press('Space');
+  await expect(article.locator('.quiz-state')).toContainText('未判定');
+  await article.locator('.quiz button').focus();
+  await page.keyboard.press('Enter');
+  await expect(article.locator('.quiz-state')).toContainText('理解チェック正解');
+  if (info.project.name.endsWith('1280')) {
+    const split = article.getByRole('separator');
+    await split.focus();
+    await page.keyboard.press('ArrowRight');
+    await expect(split).toHaveAttribute('aria-valuenow', '55');
+    await page.keyboard.press('Home');
+    await expect(split).toHaveAttribute('aria-valuenow', '35');
+    await page.keyboard.press('End');
+    await expect(split).toHaveAttribute('aria-valuenow', '65');
+    const box = await split.boundingBox();
+    const y = Math.max(10, Math.min(page.viewportSize()!.height - 10, box!.y + box!.height / 2));
+    await page.mouse.move(box!.x + box!.width / 2, y);
+    await page.mouse.down();
+    await page.mouse.move(box!.x - 100, y);
+    await page.mouse.up();
+    expect(Number(await split.getAttribute('aria-valuenow'))).toBeLessThan(65);
+    await page.locator('#reset-split').click();
+    await expect(split).toHaveAttribute('aria-valuenow', '50');
+    const left = await article.locator('.explanation').boundingBox();
+    const right = await article.locator('.workbench').boundingBox();
+    expect(right!.x).toBeGreaterThan(left!.x + left!.width);
+  } else {
+    await expect(article.getByRole('separator')).toBeHidden();
+    const left = await article.locator('.explanation').boundingBox();
+    const right = await article.locator('.workbench').boundingBox();
+    expect(right!.y).toBeGreaterThanOrEqual(left!.y + left!.height - 1);
+  }
+  const before = await article.locator('.text-block p').first().evaluate(el => parseFloat(getComputedStyle(el).fontSize));
+  await page.addStyleTag({ content: ':root { font-size: 200%; }' });
+  const after = await article.locator('.text-block p').first().evaluate(el => parseFloat(getComputedStyle(el).fontSize));
+  expect(after).toBeCloseTo(before * 2, 1);
+  for (const lesson of lessons) {
+    await page.locator(`[data-nav="${lessons.indexOf(lesson)}"]`).click();
+    await noOverflow(page);
+  }
+  await shot(page, 'text200-reduced', info.project.name);
+  await page.locator('#show-chapters').click();
+  await noOverflow(page);
+  expect(errors).toEqual([]);
+});
+
+test('native Clipboard API outcome (no API mock; does not assert OS paste)', async ({ page, browserName }) => {
+  await page.goto('/#py-ch01-first-print');
+  const card = page.locator('[data-example="py-ch01-first-print-example"]');
+  await card.getByRole('button').click();
+  const status = card.locator('[role="status"]');
+  await expect(status).not.toBeEmpty();
+  // Engine/platform permission support varies; either outcome must be honest.
+  await expect(status).toHaveText(/^(✓ コピーしました。|コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。)$/);
+  test.info().annotations.push({ type: 'native-clipboard', description: `${browserName}: ${await status.textContent()}` });
+});
+
+test('native clipboard readback and paste of command and Python', async ({ page, context, browserName }) => {
+  test.skip(browserName === 'webkit', 'Windows Playwright WebKit returned writeText success but native paste/readback is unavailable. Real Safari clipboard remains unverified.');
+  await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  for (const [id, text] of [['py-ch01-setup', 'python --version'], ['py-ch01-order', 'print("朝です")\nprint("出かけよう")']]) {
+    await page.goto(`/#${id}`);
+    const article = page.locator(`#${id}`);
+    const card = article.locator(`[data-example="${id}-example"]`);
+    await card.getByRole('button').click();
+    await expect(card.locator('[role="status"]')).toHaveText('✓ コピーしました。');
+    expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(text);
+    await article.locator('textarea').focus();
+    await page.keyboard.press('Control+V');
+    await expect(article.locator('textarea')).toHaveValue(text);
+  }
+});

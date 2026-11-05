@@ -1,0 +1,220 @@
+{
+  "images": [
+    {
+      "file": "screenshots/chromium-1280-chapters.png",
+      "width": 1280,
+      "height": 2872,
+      "sha256": "eed17ea00e5fcb6d828d7a80612595cc422c06d0016cc10011f5a6250a46f86a"
+    },
+    {
+      "file": "screenshots/chromium-1280-print.png",
+      "width": 1280,
+      "height": 2614,
+      "sha256": "9b24bb297301f0d9601ba7e000d8a24ed11c5c8a2f7311f9a7a4efb3d7fccffb"
+    },
+    {
+      "file": "screenshots/chromium-1280-setup.png",
+      "width": 1280,
+      "height": 2651,
+      "sha256": "cd234633d57e1ff60ffc07a2814bd916e7ded4a1f9f65f4767a81c8bba4d8974"
+    },
+    {
+      "file": "screenshots/chromium-1280-start.png",
+      "width": 1280,
+      "height": 1967,
+      "sha256": "cca7db8027bcb49abc5ca4668c6e2bd224591a84e64758a7d32fc9cd11ab42bc"
+    },
+    {
+      "file": "screenshots/chromium-1280-task.png",
+      "width": 1280,
+      "height": 2592,
+      "sha256": "03c4d4aaea3b50fd50e92de0fdaa94f8b2c9ce97578d2ab37fa76ea3c9a76268"
+    },
+    {
+      "file": "screenshots/chromium-1280-text200-reduced.png",
+      "width": 1280,
+      "height": 4982,
+      "sha256": "28af25b32da2573ae5bfc78c2bc089c55575d06b298c41b7e545420e9e48727a"
+    },
+    {
+      "file": "screenshots/chromium-375-chapters.png",
+      "width": 375,
+      "height": 3285,
+      "sha256": "28557327d45ceeba8b0115ef869f78660308f29dbf061cbe6951141e72673b3d"
+    },
+    {
+      "file": "screenshots/chromium-375-print.png",
+      "width": 375,
+      "height": 3581,
+      "sha256": "2825a52b4505630175dd20f451ea34c53e9fb1fe4c479969f0a469074270c024"
+    },
+    {
+      "file": "screenshots/chromium-375-setup.png",
+      "width": 375,
+      "height": 4855,
+      "sha256": "ae1e68a60ea4ae4853ae3c2918c0202545993380756e87f6c7bb1af77baebffd"
+    },
+    {
+      "file": "screenshots/chromium-375-start.png",
+      "width": 375,
+      "height": 2946,
+      "sha256": "b5cba788f2afdfdc9aa797ef1e4cb212f65d7b7066383901b239b75d7d22ceb8"
+    },
+    {
+      "file": "screenshots/chromium-375-task.png",
+      "width": 375,
+      "height": 3736,
+      "sha256": "039aba7b33b32740f280be69d430e5711832437ee7a7ce99b7ab9d4fc62a056b"
+    },
+    {
+      "file": "screenshots/chromium-375-text200-reduced.png",
+      "width": 375,
+      "height": 10270,
+      "sha256": "db75245879e15b237a02d740645ffb375c259d4dfce42e990ad5493dd82cdf95"
+    },
+    {
+      "file": "screenshots/chromium-390-chapters.png",
+      "width": 390,
+      "height": 3212,
+      "sha256": "728b3e4ca8c298c8647fecfb2917ad084d9c90e649ddf96d0ed82a6f8622347b"
+    },
+    {
+      "file": "screenshots/chromium-390-print.png",
+      "width": 390,
+      "height": 3581,
+      "sha256": "3d5c7625f5565a864bacd8a6445d35498f73c8cdd8814db7315d3750498a775e"
+    },
+    {
+      "file": "screenshots/chromium-390-setup.png",
+      "width": 390,
+      "height": 4731,
+      "sha256": "7417223ca3d45f75ba2ef32038bd83bc731c341c38e0a7b0a82d91bca94cad89"
+    },
+    {
+      "file": "screenshots/chromium-390-start.png",
+      "width": 390,
+      "height": 2923,
+      "sha256": "0cd864cc04b90025552a7718fe71e2c1e81155d9a9041e1839d0396ffd4df2fc"
+    },
+    {
+      "file": "screenshots/chromium-390-task.png",
+      "width": 390,
+      "height": 3685,
+      "sha256": "99126c446b1a66e1b6c0ebd568f7173982e03261b8aec681a75b553f9fb54604"
+    },
+    {
+      "file": "screenshots/chromium-390-text200-reduced.png",
+      "width": 390,
+      "height": 9794,
+      "sha256": "d16867b9227ba6881933157b28c8d1406542ff2c13ef8f42437aa59b1e5e85d6"
+    },
+    {
+      "file": "screenshots/webkit-1280-chapters.png",
+      "width": 1280,
+      "height": 2845,
+      "sha256": "e0abd08060f837e57df64e66ad4f92a71de740ef99651b5f0fcb75ad7ca11499"
+    },
+    {
+      "file": "screenshots/webkit-1280-print.png",
+      "width": 1280,
+      "height": 2593,
+      "sha256": "8095926db1736fcea7c0777c010dc3d4eaf771cf200b903cbf66ae5ff408b3c4"
+    },
+    {
+      "file": "screenshots/webkit-1280-setup.png",
+      "width": 1280,
+      "height": 2607,
+      "sha256": "4649df70513c519e3195b958714b56bf9cb8ba66bc69b850e191e71c4e07447f"
+    },
+    {
+      "file": "screenshots/webkit-1280-start.png",
+      "width": 1280,
+      "height": 1950,
+      "sha256": "4298906f7591047ebaa2b7700a1c44c10673f4ea2e4883925b0d90af479b27b5"
+    },
+    {
+      "file": "screenshots/webkit-1280-task.png",
+      "width": 1280,
+      "height": 2568,
+      "sha256": "d1c155c045c39069cbda4f3fd1787ff6fb5c43232a78d997496b635079e1b8e0"
+    },
+    {
+      "file": "screenshots/webkit-1280-text200-reduced.png",
+      "width": 1280,
+      "height": 4955,
+      "sha256": "f7bab5148bdabf06ea39fbdca498d6f88e12f318d182505dfaf7f63f19c540e2"
+    },
+    {
+      "file": "screenshots/webkit-375-chapters.png",
+      "width": 375,
+      "height": 3251,
+      "sha256": "9638151c1fc865dd22df05e7a5a0dc15b2c44d4e94775a55e052260be666df56"
+    },
+    {
+      "file": "screenshots/webkit-375-print.png",
+      "width": 375,
+      "height": 3541,
+      "sha256": "49e8e883bcda1d55a20218bf5a0d91f2a3c6e7f2c588c9a5b770b6f0a40b9de6"
+    },
+    {
+      "file": "screenshots/webkit-375-setup.png",
+      "width": 375,
+      "height": 4778,
+      "sha256": "abbfac9aba6d8deec0bdba0640a3856020ecbf794f05e89696db703521c60c5a"
+    },
+    {
+      "file": "screenshots/webkit-375-start.png",
+      "width": 375,
+      "height": 2912,
+      "sha256": "1f40501118c0bc9bf528973ef67ac68d3a45b1a675aa859b556d124d4c5aa1e0"
+    },
+    {
+      "file": "screenshots/webkit-375-task.png",
+      "width": 375,
+      "height": 3689,
+      "sha256": "9d161172ace983424271d54e944ce550050259a843569f6387c01a9f5b49142c"
+    },
+    {
+      "file": "screenshots/webkit-375-text200-reduced.png",
+      "width": 375,
+      "height": 10193,
+      "sha256": "a73d7941fb3ddcc10dfed4c1e9b33f18589ebeb2753d0edc76b4034d3f7ec82b"
+    },
+    {
+      "file": "screenshots/webkit-390-chapters.png",
+      "width": 390,
+      "height": 3179,
+      "sha256": "77b50437101b13e2217da0668be0c199631b92ac50a99b5d27275e5aac023fbd"
+    },
+    {
+      "file": "screenshots/webkit-390-print.png",
+      "width": 390,
+      "height": 3541,
+      "sha256": "ead968c7b9a67c54c52344cb70562c1a20d71aca9c4d2d6031f7ca7668eb8ef3"
+    },
+    {
+      "file": "screenshots/webkit-390-setup.png",
+      "width": 390,
+      "height": 4658,
+      "sha256": "8fe8bf813553fe8bdb2a4cf619044ffeef2e6fad2ea702722686c7ea41b0efbc"
+    },
+    {
+      "file": "screenshots/webkit-390-start.png",
+      "width": 390,
+      "height": 2889,
+      "sha256": "74571e826bf01042e3f547592698ac394a59c68369e64ac9a33f4f9768cb93c0"
+    },
+    {
+      "file": "screenshots/webkit-390-task.png",
+      "width": 390,
+      "height": 3640,
+      "sha256": "43301eb3500dcff772d9b625924e38a17732c437965ae0ac58947f0b1fb2b22d"
+    },
+    {
+      "file": "screenshots/webkit-390-text200-reduced.png",
+      "width": 390,
+      "height": 9722,
+      "sha256": "921760e7bef5b242dbcd87b447cb85db9a784337fdde96978804dd4bcffd7fd2"
+    }
+  ]
+}

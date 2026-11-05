@@ -1,0 +1,23 @@
+{
+  "recordedAt": "2026-11-05T10:08:47.285Z",
+  "node": "v24.20.0",
+  "platform": "win32",
+  "files": {
+    "eslint.config.js": "6b62acae8dc64248ceb575f59dc193f04928e6fe10e7a7a59f87616df19e5ab0",
+    "index.html": "5f5962d5035d8bd60ed4f434fef44d8be9374370448456c70659fc48d76ec0f6",
+    "package-lock.json": "3673319d606d02ea072e8ddd88d7fc57e0a983e8f0f94bff1faf6d8623cfc288",
+    "package.json": "3c5c6fa4e07fb27f34d3ab78854122220cbb38e518443be78c4b154cf288475d",
+    "playwright.config.ts": "1e9f834ca9916882421c0d8d6f6944fad060c33b3a6aed3ff3428f12e883dd24",
+    "src/components.ts": "9b2b7ea5ffb585e9940ad0cb4d9b0a449823ce09408e37356166d0f097753e11",
+    "src/curriculum.ts": "f9a2177447d2050fba2c72ed17dd57ccc46196f631896ef39520f03bcd3a4de2",
+    "src/main.ts": "763b203b5215855f80bf80baa593a53fd24e6982041d6d4aa75504ccdc7e511f",
+    "src/style.css": "a8a78bae94c5bf908c087ffdf04719d98b1b9137347865e755c68849b7303153",
+    "tests/browser/learning.spec.ts": "371ace80034db42f18484494f933d5a4354b146e0b20fd224738fb680a0dacb3",
+    "tests/curriculum.test.mjs": "4075be94bfb8f6f43a5305f1759e37c47a0f140ce8a02ffea9b7375c69e00218",
+    "tools/browser-test.mjs": "802a03841d8d5b91457180e3360f2fe80fcdecfc1e13fa6087e497da9f355b40",
+    "tools/record-source.mjs": "d2a04b0b2e05ca1a9adb20bef6d7d60a65130cf0a65a4164b152d041b9eb9767",
+    "tools/verify-python.mjs": "5662f9ad30cb346ad66a9ab2aa310276cda847125ce14461fb94df57fb5f637f",
+    "tsconfig.json": "c436862fa9e613bf1125ef547ab7cee851416ac97a7c9e835cf800dee3935882",
+    "vite.config.ts": "55ace3c8ca1c3f4c1ebb2efc856909ca14d932fe2c22b318fc3aae18ce69b7b1"
+  }
+}
