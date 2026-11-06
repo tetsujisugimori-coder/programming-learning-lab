@@ -6,7 +6,36 @@ Python・Shell（PowerShell / Bash）・TypeScriptを主な題材とし、コー
 
 本リポジトリは完成期限や最終的な「全編完結」を設けない、**継続更新型の学習・研究の場**です。まず基本編を整え、その後も新機能、珍しいコマンド、実務的な課題、ケーススタディ、「こんなこともできる」という発見を応用編へ随時追加していきます。
 
-> **現在の段階：構想・初期設計。** 以下は実装済み機能の一覧ではなく、プロジェクトの目的・設計方針・今後の計画です。
+> **現在の段階：Python基本編の教材基盤・第1章を実装。** 第2〜13章は目標一覧と「準備中」の表示のみです。以下の長期構想と、今回の実装範囲を区別します。
+
+## サイトを動かす
+
+Node.js 24 LTSを推奨します。教材の実行確認には手元のPythonを使います。
+
+```powershell
+npm ci
+npm run dev
+```
+
+表示されたローカルURLを開きます。Pythonコードはブラウザー内では実行しません。学習者はWindows + VS Code + Python本体 + Microsoft製Python拡張 + PowerShellを使います。
+
+```powershell
+npm run check
+node tools/verify-python.mjs
+npx playwright install chromium webkit
+npm run test:e2e
+```
+
+`check` はlint・型検査・教材構造検査・静的buildです。Pythonコード検証は固定教材だけを実行し、学習者の入力を実行しません。ブラウザー検査は専用サーバーを空きポートで起動・終了し、既存サーバーを再利用しません。先に `npm run build` を行ってください。Linuxでのブラウザー準備は `npx playwright install --with-deps chromium webkit`。
+
+`npm run build` で `dist/` を生成し、`npm run preview -- --port 43872` で確認できます。公開先は未設定（着手時GitHub Pagesは404）。`dist/` を静的ホストの配信対象にでき、相対アセットURLなのでサブパスにも配置できます。本PRで公開・自動デプロイは行いません。GitHub Actionsは検査と証拠artifactのみです。
+
+- [構成・教材追加方法](docs/architecture.md)
+- [参照部品・固定SHA・公式資料と確認日](docs/provenance.md)
+- [自己検証結果・画像・未検証事項](docs/verification.md)
+- [今回のIssue](https://github.com/tetsujisugimori-coder/programming-learning-lab/issues/1)
+
+教材データは `src/curriculum.ts`、表示部品は `src/components.ts`、画面移動・状態は `src/main.ts` です。回答・入力・開いたヒントはタブ内の画面移動で保持し、再読込で消えます。永続保存・バックアップは後続候補です。
 
 ## 1. プロジェクトの3つの目的
 

@@ -1,0 +1,1300 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\playwright.config.ts",
+    "rootDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results/final-owned-server",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-1280",
+        "name": "chromium-1280",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results/final-owned-server",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-390",
+        "name": "chromium-390",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results/final-owned-server",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-375",
+        "name": "chromium-375",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results/final-owned-server",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-1280",
+        "name": "webkit-1280",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results/final-owned-server",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-390",
+        "name": "webkit-390",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/test-results/final-owned-server",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-375",
+        "name": "webkit-375",
+        "testDir": "C:/Users/tetsu/Documents/Codex/programming-learning-lab/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "learning.spec.ts",
+      "file": "learning.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-1280",
+              "projectName": "chromium-1280",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17095,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:08:50.368Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-94965c2b4e13b35f49d1",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-1280",
+              "projectName": "chromium-1280",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 572,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:08.389Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-381e87248fd435435bcb",
+          "file": "learning.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-1280",
+              "projectName": "chromium-1280",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4280,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:08.988Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-73a2d554664dcbc3590d",
+          "file": "learning.spec.ts",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "native Clipboard API outcome (no API mock; does not assert OS paste)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "native-clipboard",
+                  "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-1280",
+              "projectName": "chromium-1280",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 527,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:13.314Z",
+                  "annotations": [
+                    {
+                      "type": "native-clipboard",
+                      "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-537294678598e8730986",
+          "file": "learning.spec.ts",
+          "line": 181,
+          "column": 1
+        },
+        {
+          "title": "native clipboard readback and paste of command and Python",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-1280",
+              "projectName": "chromium-1280",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 914,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:13.882Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-adfd26a93cbfb6d013ec",
+          "file": "learning.spec.ts",
+          "line": 192,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-390",
+              "projectName": "chromium-390",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14914,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:15.945Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-dfe9f980e3694c46d9f0",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-390",
+              "projectName": "chromium-390",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:31.641Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-cb57c950ab43a48a2fc7",
+          "file": "learning.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-390",
+              "projectName": "chromium-390",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2738,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:32.493Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-5b4ab00cf2513b6f7739",
+          "file": "learning.spec.ts",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "native Clipboard API outcome (no API mock; does not assert OS paste)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "native-clipboard",
+                  "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-390",
+              "projectName": "chromium-390",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 481,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:35.271Z",
+                  "annotations": [
+                    {
+                      "type": "native-clipboard",
+                      "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-24853f8f888c2a971569",
+          "file": "learning.spec.ts",
+          "line": 181,
+          "column": 1
+        },
+        {
+          "title": "native clipboard readback and paste of command and Python",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-390",
+              "projectName": "chromium-390",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 728,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:35.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-750141d780a4601fc0e6",
+          "file": "learning.spec.ts",
+          "line": 192,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-375",
+              "projectName": "chromium-375",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14703,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:37.723Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-6160fed2bdf569c68e4f",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-375",
+              "projectName": "chromium-375",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 835,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:53.249Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-f17bc0bd985a4de8b70d",
+          "file": "learning.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-375",
+              "projectName": "chromium-375",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3017,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:54.124Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-581d2850ea730211c1c4",
+          "file": "learning.spec.ts",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "native Clipboard API outcome (no API mock; does not assert OS paste)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "native-clipboard",
+                  "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-375",
+              "projectName": "chromium-375",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 476,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:57.178Z",
+                  "annotations": [
+                    {
+                      "type": "native-clipboard",
+                      "description": "chromium: コピーできませんでした。コード欄の文字を選んで手動でコピーしてください。"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-1d749c6e6e8d488270e3",
+          "file": "learning.spec.ts",
+          "line": 181,
+          "column": 1
+        },
+        {
+          "title": "native clipboard readback and paste of command and Python",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-375",
+              "projectName": "chromium-375",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 713,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:57.692Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-d19bb943fa626933b213",
+          "file": "learning.spec.ts",
+          "line": 192,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-1280",
+              "projectName": "webkit-1280",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18498,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:09:59.695Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-8bea8e6d6d32e7eba8d6",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-1280",
+              "projectName": "webkit-1280",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1247,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:18.345Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-af878a5bc7a58aa8f4bb",
+          "file": "learning.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-1280",
+              "projectName": "webkit-1280",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2911,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:19.598Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-3b45f07ab51afa0fff1e",
+          "file": "learning.spec.ts",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "native Clipboard API outcome (no API mock; does not assert OS paste)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "native-clipboard",
+                  "description": "webkit: ✓ コピーしました。"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-1280",
+              "projectName": "webkit-1280",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 630,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:22.515Z",
+                  "annotations": [
+                    {
+                      "type": "native-clipboard",
+                      "description": "webkit: ✓ コピーしました。"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-b22d4b96b7f8cde402df",
+          "file": "learning.spec.ts",
+          "line": 181,
+          "column": 1
+        },
+        {
+          "title": "native clipboard readback and paste of command and Python",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Windows Playwright WebKit returned writeText success but native paste/readback is unavailable. Real Safari clipboard remains unverified.",
+                  "location": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "line": 193,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit-1280",
+              "projectName": "webkit-1280",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:23.151Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Windows Playwright WebKit returned writeText success but native paste/readback is unavailable. Real Safari clipboard remains unverified.",
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "line": 193,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-2d7b17c5984c3dab7cb6",
+          "file": "learning.spec.ts",
+          "line": 192,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-390",
+              "projectName": "webkit-390",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18257,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:24.259Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-a96470ceabdacef6890d",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-390",
+              "projectName": "webkit-390",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1242,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:42.662Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-357e42d26d087341d534",
+          "file": "learning.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-390",
+              "projectName": "webkit-390",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2729,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:43.910Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-928e3cdb52fe9d218207",
+          "file": "learning.spec.ts",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "native Clipboard API outcome (no API mock; does not assert OS paste)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "native-clipboard",
+                  "description": "webkit: ✓ コピーしました。"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-390",
+              "projectName": "webkit-390",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 665,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:46.646Z",
+                  "annotations": [
+                    {
+                      "type": "native-clipboard",
+                      "description": "webkit: ✓ コピーしました。"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-b90d61be026651008690",
+          "file": "learning.spec.ts",
+          "line": 181,
+          "column": 1
+        },
+        {
+          "title": "native clipboard readback and paste of command and Python",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Windows Playwright WebKit returned writeText success but native paste/readback is unavailable. Real Safari clipboard remains unverified.",
+                  "location": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "line": 193,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit-390",
+              "projectName": "webkit-390",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 290,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:47.318Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Windows Playwright WebKit returned writeText success but native paste/readback is unavailable. Real Safari clipboard remains unverified.",
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "line": 193,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-2690b77204e8e98438f5",
+          "file": "learning.spec.ts",
+          "line": 192,
+          "column": 1
+        },
+        {
+          "title": "all eight lessons: explicit grading, staged hints, records, round trips and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-375",
+              "projectName": "webkit-375",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:10:48.576Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-9e890e693b151c944c55",
+          "file": "learning.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "copy resolves only after success, rejects honestly, copies exact authored text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-375",
+              "projectName": "webkit-375",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1150,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:11:07.079Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-d05dc76b659ea3857ba0",
+          "file": "learning.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "keyboard split, input composition, actual rem text enlargement and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-375",
+              "projectName": "webkit-375",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2595,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:11:08.235Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-27baeee94f77e04d7d8e",
+          "file": "learning.spec.ts",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "native Clipboard API outcome (no API mock; does not assert OS paste)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "native-clipboard",
+                  "description": "webkit: ✓ コピーしました。"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-375",
+              "projectName": "webkit-375",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 642,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:11:10.835Z",
+                  "annotations": [
+                    {
+                      "type": "native-clipboard",
+                      "description": "webkit: ✓ コピーしました。"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-61255575c23b160a4d4d",
+          "file": "learning.spec.ts",
+          "line": 181,
+          "column": 1
+        },
+        {
+          "title": "native clipboard readback and paste of command and Python",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Windows Playwright WebKit returned writeText success but native paste/readback is unavailable. Real Safari clipboard remains unverified.",
+                  "location": {
+                    "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                    "line": 193,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit-375",
+              "projectName": "webkit-375",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T10:11:11.484Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Windows Playwright WebKit returned writeText success but native paste/readback is unavailable. Real Safari clipboard remains unverified.",
+                      "location": {
+                        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+                        "line": 193,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "e0ec79b0c4f511f16424-1df23e572210f328272e",
+          "file": "learning.spec.ts",
+          "line": 192,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T10:08:49.269Z",
+    "duration": 142517.72699999998,
+    "expected": 27,
+    "skipped": 3,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

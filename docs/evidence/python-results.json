@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-11-05T10:00:29.867Z",
+  "version": "Python 3.14.7",
+  "normal": [
+    {
+      "id": "py-ch01-flow-example",
+      "code": "print(\"こんにちは\")",
+      "exitCode": 0,
+      "stdout": "こんにちは\r\n",
+      "stderr": ""
+    },
+    {
+      "id": "py-ch01-first-print-example",
+      "code": "print(\"こんにちは\")",
+      "exitCode": 0,
+      "stdout": "こんにちは\r\n",
+      "stderr": ""
+    },
+    {
+      "id": "py-ch01-first-print-change",
+      "code": "print(\"おはよう\")",
+      "exitCode": 0,
+      "stdout": "おはよう\r\n",
+      "stderr": ""
+    },
+    {
+      "id": "py-ch01-order-example",
+      "code": "print(\"朝です\")\nprint(\"出かけよう\")",
+      "exitCode": 0,
+      "stdout": "朝です\r\n出かけよう\r\n",
+      "stderr": ""
+    },
+    {
+      "id": "py-ch01-order-change",
+      "code": "print(\"出かけよう\")\nprint(\"朝です\")",
+      "exitCode": 0,
+      "stdout": "出かけよう\r\n朝です\r\n",
+      "stderr": ""
+    },
+    {
+      "id": "py-ch01-change-example",
+      "code": "print(\"今日は晴れ\")",
+      "exitCode": 0,
+      "stdout": "今日は晴れ\r\n",
+      "stderr": ""
+    },
+    {
+      "id": "py-ch01-change-answer",
+      "code": "print(\"今日は雨\")",
+      "exitCode": 0,
+      "stdout": "今日は雨\r\n",
+      "stderr": ""
+    },
+    {
+      "id": "py-ch01-error-fixed",
+      "code": "print(\"こんにちは\")",
+      "exitCode": 0,
+      "stdout": "こんにちは\r\n",
+      "stderr": ""
+    },
+    {
+      "id": "py-ch01-task-answer",
+      "code": "print(\"おはよう\")\nprint(\"明日は散歩する\")",
+      "exitCode": 0,
+      "stdout": "おはよう\r\n明日は散歩する\r\n",
+      "stderr": ""
+    }
+  ],
+  "intentionalErrors": [
+    {
+      "id": "py-ch01-error-example",
+      "code": "print(\"こんにちは\"",
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "  File \"<string>\", line 1\r\n    print(\"こんにちは\"\r\n         ^\r\nSyntaxError: '(' was never closed\r\n"
+    }
+  ]
+}

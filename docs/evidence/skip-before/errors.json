@@ -1,0 +1,57 @@
+[
+  {
+    "condition": "learning-keyboard-split-in-36758-argement-and-reduced-motion-chromium-375",
+    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main')\u001b[22m\n\u001b[2m    8 × locator resolved to <main id=\"main\" tabindex=\"-1\">…</main>\u001b[22m\n\u001b[2m      - unexpected value \"inactive\"\u001b[22m\n",
+    "stack": [
+      {
+        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+        "line": 119,
+        "column": 39
+      }
+    ]
+  },
+  {
+    "condition": "learning-keyboard-split-in-36758-argement-and-reduced-motion-chromium-390",
+    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main')\u001b[22m\n\u001b[2m    9 × locator resolved to <main id=\"main\" tabindex=\"-1\">…</main>\u001b[22m\n\u001b[2m      - unexpected value \"inactive\"\u001b[22m\n",
+    "stack": [
+      {
+        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+        "line": 119,
+        "column": 39
+      }
+    ]
+  },
+  {
+    "condition": "learning-keyboard-split-in-36758-argement-and-reduced-motion-webkit-1280",
+    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main')\u001b[22m\n\u001b[2m    9 × locator resolved to <main id=\"main\" tabindex=\"-1\">…</main>\u001b[22m\n\u001b[2m      - unexpected value \"inactive\"\u001b[22m\n",
+    "stack": [
+      {
+        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+        "line": 119,
+        "column": 39
+      }
+    ]
+  },
+  {
+    "condition": "learning-keyboard-split-in-36758-argement-and-reduced-motion-webkit-375",
+    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main')\u001b[22m\n\u001b[2m    9 × locator resolved to <main id=\"main\" tabindex=\"-1\">…</main>\u001b[22m\n\u001b[2m      - unexpected value \"inactive\"\u001b[22m\n",
+    "stack": [
+      {
+        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+        "line": 119,
+        "column": 39
+      }
+    ]
+  },
+  {
+    "condition": "learning-keyboard-split-in-36758-argement-and-reduced-motion-webkit-390",
+    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main')\u001b[22m\n\u001b[2m    9 × locator resolved to <main id=\"main\" tabindex=\"-1\">…</main>\u001b[22m\n\u001b[2m      - unexpected value \"inactive\"\u001b[22m\n",
+    "stack": [
+      {
+        "file": "C:\\Users\\tetsu\\Documents\\Codex\\programming-learning-lab\\tests\\browser\\learning.spec.ts",
+        "line": 119,
+        "column": 39
+      }
+    ]
+  }
+]
