@@ -157,3 +157,7 @@ app.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach(button => button.
 updateRecords();
 if (location.hash === '#chapters') showChapters(false);
 else { const index = lessons.findIndex(lesson => `#${lesson.id}` === location.hash); showLesson(index >= 0 ? index : 0, false); }
+
+// Additive language module: preserve Python DOM and its session state.
+import { mountWasm } from './wasm-learning';
+mountWasm(app);

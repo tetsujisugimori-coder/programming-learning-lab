@@ -243,3 +243,10 @@ PCでは教材・エディタ・実行結果の並列表示、スマートフォ
 ---
 
 *初期方針制定：2026年11月5日（JST）*
+
+## WebAssembly基本編 Stage 1
+
+第1章8節と後続12章の目標を追加。言語欄からWebAssemblyを選択できます。WATを同梱WABTで変換し、専用Worker内で実Wasmを実行します。停止・5秒timeout・import非提供・i32入力検証を備えます。実行成功と学習理解は別の記録です。Python第1章とURLは保持します。
+
+- [設計・依存・検証範囲](docs/wasm-stage1.md)
+- [教材制作から学べること](docs/wasm-development-notes.md)

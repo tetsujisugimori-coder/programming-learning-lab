@@ -1,0 +1,57 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> programming-learning-lab@0.1.0 check
+> npm run lint && npm run typecheck && npm test && npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> programming-learning-lab@0.1.0 lint
+> eslint src tools tests
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> programming-learning-lab@0.1.0 typecheck
+> tsc --noEmit
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> programming-learning-lab@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ stable IDs, 13 goals and only chapter 1 has content (1.108795ms)
+✔ each lesson has one explicit check, feedback and staged help (0.171617ms)
+✔ 13 chapters, eight independent lessons and explicit quiz keys (1.046551ms)
+✔ real Wasm add 2,3 (8.317227ms)
+✔ real Wasm add -7,2 (0.583677ms)
+✔ real Wasm add 0,0 (0.457106ms)
+✔ real Wasm add 2147483647,1 (0.486891ms)
+✔ real Wasm add -2147483648,-1 (0.522104ms)
+✔ real subtraction (0.561072ms)
+✔ syntax invalid rejected (0.871739ms)
+✔ type mismatch rejected (0.34014ms)
+✔ runtime trap distinct from compile success (1.163657ms)
+✔ corrupt binary rejected by browser API (0.436325ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 142.49038
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> programming-learning-lab@0.1.0 build
+> tsc --noEmit && vite build --configLoader native
+
+vite v7.3.7 building client environment for production...
+transforming...
+[plugin vite:resolve] Module "fs" has been externalized for browser compatibility, imported by "/workspace/scratch/e622c1e9421e/programming-wasm-stage1/node_modules/wabt/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+✓ 8 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                        0.84 kB │ gzip:  0.58 kB
+dist/assets/wasm-worker-AreuBeIE.js  803.47 kB
+dist/assets/index-DP4wT0J1.css        14.93 kB │ gzip:  4.22 kB
+dist/assets/index-DT7NH8ii.js         59.17 kB │ gzip: 20.43 kB
+✓ built in 424ms

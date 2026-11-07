@@ -195,3 +195,25 @@ legend { font-weight: 700; margin-bottom: .9rem; padding: 0; }
   .lesson-footer { flex-wrap: wrap; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+/* Wasm is an additive course; Python layout and records remain unchanged. */
+.wasm-main { max-width: 1440px; margin:auto; padding:clamp(1rem,3vw,3rem); }
+.wasm-nav { display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0; }
+.wasm-nav a { padding:.5rem .7rem;border:1px solid #c7d3ca;border-radius:.5rem; }
+.wasm-nav [aria-current] { background:#dcebdd; font-weight:700; }
+.wasm-grid { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem;align-items:start; }
+.wasm-grid article,.wasm-lab { min-width:0; }
+.wasm-grid label { display:block;margin:.8rem 0; }
+.wasm-grid input:not([type=radio]):not([type=checkbox]),.wasm-grid textarea { display:block;width:100%;box-sizing:border-box;padding:.7rem;border:1px solid #83968a;border-radius:.4rem;font:inherit; }
+.wasm-grid textarea { min-height:7rem; }
+.wasm-grid .wat-editor { min-height:13rem;font-family:monospace;font-size:.95rem;tab-size:2; }
+.wasm-lab { padding:1.2rem;border:1px solid #b8c8bc;border-radius:1rem;background:#f3f7f1; }
+.wasm-inputs { display:grid;grid-template-columns:1fr 1fr;gap:1rem; }
+.wasm-buttons { display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0; }
+.wasm-grid pre { white-space:pre-wrap;overflow-wrap:anywhere;max-height:15rem;overflow:auto; }
+.wasm-status,.wasm-feedback { overflow-wrap:anywhere; }
+.wasm-result { display:block;font:700 2rem monospace;min-height:2.4rem;color:#224b37; }
+.wasm-concept { margin:1rem 0;padding:1rem;border-left:3px solid #61836c;background:#eef4ed; }
+.wasm-concept figcaption {font-size:.85rem;}
+.wasm-quiz {padding:1rem 0;}.wasm-quiz fieldset{border:0;padding:0;}
+@media(max-width:900px){.wasm-grid{grid-template-columns:1fr;}.wasm-nav{font-size:.9rem;}}
