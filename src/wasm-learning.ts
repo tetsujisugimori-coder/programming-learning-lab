@@ -2,12 +2,13 @@ import { escape } from './components';
 import { sampleWat, wasmChapters, wasmLessons } from './wasm-curriculum';
 
 export function mountWasm(app: HTMLElement) {
+  const pythonTitle = document.title;
   const pythonNodes = Array.from(app.children) as HTMLElement[];
   const host = document.createElement('div');
   host.id = 'wasm-course'; host.hidden = true;
   host.innerHTML = `<header class="site-header"><a class="brand" href="#py-ch01-goals">プログラム学習</a><a href="#py-ch01-goals">Pythonへ戻る</a></header>
     <div class="course-bar"><nav aria-label="学習する言語"><a class="language" href="#py-ch01-goals">Python</a><a class="language active" href="#wasm-1">WebAssembly 基本編</a></nav><span>記録は再読込まで</span></div>
-    <main class="wasm-main" id="wasm-main"><p class="eyebrow">WEBASSEMBLY / CHAPTER 01</p><h1>WebAssemblyとは何か</h1><p>考える → 予想する → 操作する → 実行する → 結果を確かめる → 修正する</p>
+    <main class="wasm-main" id="wasm-main" tabindex="-1"><p class="eyebrow">WEBASSEMBLY / CHAPTER 01</p><h1>WebAssemblyとは何か</h1><p>考える → 予想する → 操作する → 実行する → 結果を確かめる → 修正する</p>
     <nav class="wasm-nav" aria-label="WebAssembly第1章の節">${wasmLessons.map((l,i)=>`<a href="#wasm-${i+1}">${i+1}. ${escape(l.title)}</a>`).join('')}<a href="#wasm-chapters">全13章</a></nav>
     <p id="wasm-progress" role="status"></p>
     <section id="wasm-chapters" hidden><h2 tabindex="-1">基本編の道のり</h2><p>第1章だけが学習できます。応用編は構想段階です。</p><div class="chapter-cards">${wasmChapters.map(([title,goal],i)=>`<article class="chapter-card"><div><h3>${i+1}. ${escape(title)}</h3><p>${escape(goal)}</p>${i===0?'<a href="#wasm-1">第1章へ</a>':'<span>準備中</span>'}</div></article>`).join('')}</div></section>
@@ -69,7 +70,7 @@ export function mountWasm(app: HTMLElement) {
   const route=(focus=false)=>{
     stop('画面移動により停止しました。成功には数えません。');
     const match=location.hash.match(/^#wasm-(\d|chapters)$/);
-    const wasm=!!match;pythonNodes.forEach(n=>n.hidden=wasm);host.hidden=!wasm;
+    const wasm=!!match;document.title=wasm?'WebAssembly基本編 | プログラム学習':pythonTitle;pythonNodes.forEach(n=>n.hidden=wasm);host.hidden=!wasm;
     if(!wasm)return;
     const index=match[1]==='chapters'?-1:Math.max(0,Math.min(7,Number(match[1])-1));
     el(host,'#wasm-chapters').hidden=index!==-1;sections.forEach((s,i)=>s.hidden=i!==index);
@@ -77,5 +78,6 @@ export function mountWasm(app: HTMLElement) {
     if(focus)(index<0?el(host,'#wasm-chapters h2'):el(sections[index],'h2')).focus();
   };
   window.addEventListener('hashchange',()=>route(true));window.addEventListener('pagehide',()=>stop('ページ終了により停止'));
+  document.querySelector<HTMLAnchorElement>('a[href="#main"]')?.addEventListener('click', event => { if(!host.hidden){event.preventDefault();el(host,'#wasm-main').focus();} });
   progress();route();
 }

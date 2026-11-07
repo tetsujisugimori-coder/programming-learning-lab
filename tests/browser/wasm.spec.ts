@@ -7,6 +7,8 @@ test('Wasm real execution, failures, independent records and Python preservation
   await page.getByRole('link',{name:'WebAssembly 基本編',exact:true}).click();
   const section=page.locator('[data-wasm-lesson="0"]');
   await expect(section).toBeVisible();
+  await expect(page).toHaveTitle('WebAssembly基本編 | プログラム学習');
+  await page.locator('.skip').focus(); await page.keyboard.press('Enter'); await expect(page.locator('#wasm-main')).toBeFocused();
   await section.getByText('サンプルコードを開く・変更する',{exact:true}).click();
   const code=section.locator('.wat-editor'), status=section.locator('.wasm-status');
   await section.getByRole('button',{name:'変換・検証',exact:true}).click();await expect(status).toContainText('変換・検証成功');await expect(section.locator('.wasm-observed')).toContainText('未確認');
@@ -19,6 +21,7 @@ test('Wasm real execution, failures, independent records and Python preservation
   await code.fill('(module (import "env" "x" (func)))');await section.getByRole('button',{name:'変換・検証',exact:true}).click();await expect(status).toContainText('importを提供しません');
   await code.fill('(module (func (export "calculate") (param i32 i32) (result i32) (loop $forever br $forever) i32.const 0))');await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(status).toContainText('時間切れ',{timeout:8000});await expect(section.locator('.wasm-observed')).toContainText('未確認');
   await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await section.getByRole('button',{name:'停止',exact:true}).click();await expect(status).toContainText('利用者が停止');
+  await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await page.locator('.wasm-nav a[href="#wasm-2"]').click();await page.locator('.wasm-nav a[href="#wasm-1"]').click();await expect(status).toContainText('画面移動');await expect(section.locator('.wasm-observed')).toContainText('未確認');
   await section.getByRole('button',{name:'コードと実行欄を初期化'}).click();await expect(code).toHaveValue(sampleWat);
   await section.locator('input[type=radio]').first().check();await expect(section.locator('.wasm-feedback')).toHaveText('選択中・未判定');await section.getByRole('button',{name:'回答を確認する'}).click();await expect(section.locator('.wasm-feedback')).toContainText('正解');
   await section.locator('[data-wasm-memo]').fill('実行と理解は別');await section.locator('[data-wasm-read]').check();await section.getByText('ヒント1',{exact:true}).click();await section.getByText('ヒント2',{exact:true}).click();
