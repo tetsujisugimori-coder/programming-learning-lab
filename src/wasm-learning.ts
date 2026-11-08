@@ -29,7 +29,7 @@ export function mountWasm(app: HTMLElement) {
   function progress() { el(host,'#wasm-progress').textContent=`読了 ${state.filter(s=>s.read).length}/8 · 理解チェック正解 ${state.filter(s=>s.correct).length}/8 · 現在のコード・入力の実行確認 ${state.filter(s=>s.observed).length}/8（独立した記録・自動完了なし）`; }
   function end() { if(!active) return; active.worker.terminate(); clearTimeout(active.timer); el<HTMLButtonElement>(active.section,'[data-wasm-action="stop"]').disabled=true; active=undefined; }
   function stop(reason:string) { if(active) { el(active.section,'.wasm-status').textContent=reason; end(); } }
-  function invalidate(section:HTMLElement,index:number) { stop('変更したため停止。成功には数えません。'); state[index].observed=false; el(section,'.wasm-observed').textContent='現在のコード・入力：実行未確認'; el(section,'.wasm-result').textContent=''; el(section,'.wasm-comparison').textContent=''; el(section,'.wasm-bytes').textContent='未変換'; progress(); }
+  function invalidate(section:HTMLElement,index:number) { stop('変更したため停止。成功には数えません。'); state[index].observed=false; el(section,'.wasm-status').textContent='現在のコード・入力は未実行です。'; el(section,'.wasm-call').textContent='未実行：入力値を検証してから呼び出します'; el(section,'.wasm-observed').textContent='現在のコード・入力：実行未確認'; el(section,'.wasm-result').textContent=''; el(section,'.wasm-comparison').textContent=''; el(section,'.wasm-bytes').textContent='未変換'; progress(); }
   sections.forEach((section,i)=>{
     el(section,'[data-wasm-read]').addEventListener('change',e=>{state[i].read=(e.target as HTMLInputElement).checked;progress();});
     const form=el<HTMLFormElement>(section,'.wasm-quiz');

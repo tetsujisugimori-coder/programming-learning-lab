@@ -1,0 +1,27 @@
+[
+  {
+    "path": "src/curriculum.ts",
+    "sha256": "f9a2177447d2050fba2c72ed17dd57ccc46196f631896ef39520f03bcd3a4de2",
+    "matches_main": true
+  },
+  {
+    "path": "src/components.ts",
+    "sha256": "9b2b7ea5ffb585e9940ad0cb4d9b0a449823ce09408e37356166d0f097753e11",
+    "matches_main": true
+  },
+  {
+    "path": "tools/verify-python.mjs",
+    "sha256": "5662f9ad30cb346ad66a9ab2aa310276cda847125ce14461fb94df57fb5f637f",
+    "matches_main": true
+  },
+  {
+    "path": "tests/curriculum.test.mjs",
+    "sha256": "4075be94bfb8f6f43a5305f1759e37c47a0f140ce8a02ffea9b7375c69e00218",
+    "matches_main": true
+  },
+  {
+    "path": "tests/browser/learning.spec.ts",
+    "sha256": "371ace80034db42f18484494f933d5a4354b146e0b20fd224738fb680a0dacb3",
+    "matches_main": true
+  }
+]

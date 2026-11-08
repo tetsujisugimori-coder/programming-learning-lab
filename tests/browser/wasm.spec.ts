@@ -12,8 +12,8 @@ test('Wasm real execution, failures, independent records and Python preservation
   await section.getByText('サンプルコードを開く・変更する',{exact:true}).click();
   const code=section.locator('.wat-editor'), status=section.locator('.wasm-status');
   await section.getByRole('button',{name:'変換・検証',exact:true}).click();await expect(status).toContainText('変換・検証成功');await expect(section.locator('.wasm-observed')).toContainText('未確認');
-  await section.locator('.wasm-prediction').fill('5');await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(status).toHaveText('実Wasm実行成功');await expect(section.locator('.wasm-result')).toHaveText('5');await expect(section.locator('.wasm-comparison')).toContainText('一致');
-  await section.locator('.wasm-a').fill('2147483647');await section.locator('.wasm-b').fill('1');await expect(section.locator('.wasm-observed')).toContainText('未確認');await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(section.locator('.wasm-result')).toHaveText('-2147483648');
+  await section.locator('.wasm-prediction').fill('5');await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(status).toHaveText('実Wasm実行成功');await expect(section.locator('.wasm-result')).toHaveText('5');await expect(section.locator('.wasm-comparison')).toHaveText('実行前の予想「5」：一致。変更点と理由を考えましょう。');
+  await section.locator('.wasm-a').fill('2147483647');await expect(status).toHaveText('現在のコード・入力は未実行です。');await expect(section.locator('.wasm-call')).toHaveText('未実行：入力値を検証してから呼び出します');await section.locator('.wasm-b').fill('1');await expect(section.locator('.wasm-observed')).toContainText('未確認');await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(section.locator('.wasm-result')).toHaveText('-2147483648');
   for(const input of ['', '1.5','2147483648','abc']){await section.locator('.wasm-a').fill(input);await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(status).toContainText('入力エラー');}
   await section.locator('.wasm-a').fill('7');await section.locator('.wasm-b').fill('2');await code.fill(sampleWat.replace('i32.add','i32.sub'));await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(section.locator('.wasm-result')).toHaveText('5');
   for(const bad of ['(module',sampleWat.replace('i32.add','f32.add')]){await code.fill(bad);await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(status).toContainText('WAT変換・型検証エラー');}
@@ -38,4 +38,9 @@ test('unsupported platform and Worker load failure are not success',async({page}
 });
 test('worker load failure is visible',async({page})=>{
  await page.route('**/wasm-worker-*.js',route=>route.abort());await page.goto('/#wasm-1');const s=page.locator('[data-wasm-lesson="0"]');await s.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(s.locator('.wasm-status')).toContainText('Workerロード・実行失敗');await expect(s.locator('.wasm-observed')).toContainText('未確認');
+});
+
+test('nested static subpath loads compiler and executes real Wasm',async({page})=>{
+ const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/nested/course/index.html#wasm-4');const s=page.locator('[data-wasm-lesson="3"]');await s.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(s.locator('.wasm-status')).toHaveText('実Wasm実行成功');await expect(s.locator('.wasm-result')).toHaveText('5');expect(errors).toEqual([]);
 });

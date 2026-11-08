@@ -48,3 +48,5 @@ Node 24で `npm ci`、`npm run check`、`node tools/verify-python.mjs`。
 正式ブラウザー計画はChromium/WebKit × 375/390/765/1280 × normal/reduced-motion の16条件。既存Python5シナリオとWasm3シナリオを各条件で実行。CI最終結果はPRの固定HEADと対応させ追記する。
 
 次工程: 独立レビューでWorker終了競合、実Wasmと記録、境界/異常系、Python往復を重点照合。可変分割、永続保存・バックアップ、Wasm関数署名の教材用制約、メモリ上限、実機iPhone操作を優先候補とする。
+
+独立監査のP2（編集後に旧成功status/呼出し表示が残存）を修正し、status/呼出しも未実行へ戻す反例を追加。予想一致判定の試験は「不一致」を誤受理しない完全一致へ強化。静的サーバーにテスト専用 `/nested/course/` 配信別名を設け、実buildの相対Worker読込み・実Wasm実行を追加検査する。製品配信設定は変更しない。
