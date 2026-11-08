@@ -50,3 +50,5 @@ Node 24で `npm ci`、`npm run check`、`node tools/verify-python.mjs`。
 次工程: 独立レビューでWorker終了競合、実Wasmと記録、境界/異常系、Python往復を重点照合。可変分割、永続保存・バックアップ、Wasm関数署名の教材用制約、メモリ上限、実機iPhone操作を優先候補とする。
 
 独立監査のP2（編集後に旧成功status/呼出し表示が残存）を修正し、status/呼出しも未実行へ戻す反例を追加。予想一致判定の試験は「不一致」を誤受理しない完全一致へ強化。静的サーバーにテスト専用 `/nested/course/` 配信別名を設け、実buildの相対Worker読込み・実Wasm実行を追加検査する。製品配信設定は変更しない。
+
+初回CI 42427205382（旧HEAD8156ac8）は100 PASS/20 FAIL/8 SKIP。Wasm3シナリオ×16条件は成功。失敗は既存Python試験の全体CSS検索が非表示Wasm13章も数えて26件となる16件と、project名末尾1280に依存したPC判定が新しいmotion接尾辞で誤分岐した4件。Python13章の検査を#chapter-listへ限定し、PC判定を実viewport幅へ変更。期待値・assertion・検査内容は維持し、緩和や失敗の成功への再分類はしない。原ZIP artifact 13596311434 / SHA256 f2865987f79ce00ebe7a2338caf8404ef83d9d8736384272f69682101e1c7f82 を保全する。WebKitクリップボードreadback8 SKIPは既存の明示的制限でありPASSには含めない。

@@ -21,7 +21,8 @@
   },
   {
     "path": "tests/browser/learning.spec.ts",
-    "sha256": "371ace80034db42f18484494f933d5a4354b146e0b20fd224738fb680a0dacb3",
-    "matches_main": true
+    "sha256": "5eefbc601204802425c564cac029347fc32f27f5f9d758ae435f4f0a86fda7dd",
+    "matches_main": false,
+    "reason": "16-condition matrix names no longer encode width at suffix; use actual viewport. Scope 13 Python chapter assertions to Python chapter-list, excluding hidden Wasm list. Assertions and expected values unchanged."
   }
 ]
