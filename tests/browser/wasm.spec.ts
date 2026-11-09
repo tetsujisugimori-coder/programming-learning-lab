@@ -30,7 +30,7 @@ test('Wasm real execution, failures, independent records and Python preservation
   await page.getByRole('link',{name:'WebAssembly 基本編',exact:true}).click();await expect(section.locator('[data-wasm-memo]')).toHaveValue('実行と理解は別');
   await section.getByRole('button',{name:'実Wasmを実行',exact:true}).click();await expect(status).toHaveText('実Wasm実行成功');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
-  await page.screenshot({path:`docs/evidence/wasm-stage1/${info.project.name}.png`,fullPage:true});
+  await page.screenshot({path:`${process.env.E2E_EVIDENCE_ROOT || 'docs/evidence/wasm-stage1'}/${info.project.name}.png`,fullPage:true});
   await page.locator('.wasm-nav a[href="#wasm-chapters"]').click();await expect(page.locator('#wasm-chapters .chapter-card')).toHaveCount(13);await expect(page.locator('#wasm-chapters')).toContainText('準備中');
 });
 test('unsupported platform and Worker load failure are not success',async({page})=>{

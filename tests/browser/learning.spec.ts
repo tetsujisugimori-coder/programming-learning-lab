@@ -2,7 +2,7 @@ import { test, expect, type Page } from '@playwright/test';
 import { lessons } from '../../src/curriculum';
 import { mkdirSync } from 'node:fs';
 
-const evidence = 'docs/evidence/screenshots';
+const evidence = process.env.E2E_EVIDENCE_ROOT ? `${process.env.E2E_EVIDENCE_ROOT}/python-screenshots` : 'docs/evidence/screenshots';
 mkdirSync(evidence, { recursive: true });
 async function noOverflow(page: Page) {
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);

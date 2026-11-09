@@ -83,12 +83,6 @@ function navigate(index: number) {
   if (location.hash === hash) showLesson(index);
   else location.hash = hash;
 }
-window.addEventListener('hashchange', () => {
-  // Keep native skip-link focus on main; it is not a lesson route.
-  if (location.hash === '#main') return;
-  if (location.hash === '#chapters') showChapters();
-  else { const index = lessons.findIndex(lesson => `#${lesson.id}` === location.hash); showLesson(index >= 0 ? index : current); }
-});
 get('#show-chapters').addEventListener('click', () => { if (location.hash === '#chapters') showChapters(); else location.hash = '#chapters'; });
 get('#resume-lesson').addEventListener('click', () => navigate(current));
 get('#finish-path').addEventListener('click', () => { location.hash = '#chapters'; });
@@ -155,9 +149,23 @@ app.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach(button => button.
 }));
 
 updateRecords();
-if (location.hash === '#chapters') showChapters(false);
-else { const index = lessons.findIndex(lesson => `#${lesson.id}` === location.hash); showLesson(index >= 0 ? index : 0, false); }
 
-// Additive language module: preserve Python DOM and its session state.
+// One owner coordinates course visibility before either course moves focus.
+// Python DOM/session state is kept intact by the additive Wasm module.
 import { mountWasm } from './wasm-learning';
-mountWasm(app);
+const routeWasm = mountWasm(app);
+function route(focus = false) {
+  if (routeWasm(focus)) return;
+  // A history return may target main while Python was hidden. Restore first.
+  if (location.hash === '#main') {
+    if (focus) get('#main').focus();
+    return;
+  }
+  if (location.hash === '#chapters') showChapters(focus);
+  else {
+    const index = lessons.findIndex(lesson => `#${lesson.id}` === location.hash);
+    showLesson(index >= 0 ? index : current, focus);
+  }
+}
+window.addEventListener('hashchange', () => route(true));
+route();

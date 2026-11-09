@@ -71,13 +71,16 @@ export function mountWasm(app: HTMLElement) {
     stop('画面移動により停止しました。成功には数えません。');
     const match=location.hash.match(/^#wasm-(\d|chapters)$/);
     const wasm=!!match;document.title=wasm?'WebAssembly基本編 | プログラム学習':pythonTitle;pythonNodes.forEach(n=>n.hidden=wasm);host.hidden=!wasm;
-    if(!wasm)return;
+    if(!wasm)return false;
     const index=match[1]==='chapters'?-1:Math.max(0,Math.min(7,Number(match[1])-1));
     el(host,'#wasm-chapters').hidden=index!==-1;sections.forEach((s,i)=>s.hidden=i!==index);
     host.querySelectorAll('.wasm-nav a').forEach(a=>{if(a.getAttribute('href')===location.hash)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
     if(focus)(index<0?el(host,'#wasm-chapters h2'):el(sections[index],'h2')).focus();
+    return true;
   };
-  window.addEventListener('hashchange',()=>route(true));window.addEventListener('pagehide',()=>stop('ページ終了により停止'));
+  window.addEventListener('pagehide',()=>stop('ページ終了により停止'));
   document.querySelector<HTMLAnchorElement>('a[href="#main"]')?.addEventListener('click', event => { if(!host.hidden){event.preventDefault();el(host,'#wasm-main').focus();} });
-  progress();route();
+  progress();
+  // The caller owns hashchange and invokes this before Python navigation.
+  return route;
 }

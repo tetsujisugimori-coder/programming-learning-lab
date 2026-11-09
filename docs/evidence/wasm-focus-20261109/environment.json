@@ -1,0 +1,20 @@
+{
+  "baseline_head": "34422bf6736a16435247c8898214fb0c07429555",
+  "baseline_tree": "001e0973fbc8062fde0ed94c0c3077265bab9eb1",
+  "main": "c0eb74888a8878a27c220669b3ac0af394290496",
+  "node": "v24.22.1",
+  "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "local_playwright": "1.56.1",
+  "ci_playwright": "1.58.2",
+  "chromium": "141.0.7390.37",
+  "webkit": "26.0",
+  "before_core_negative_cases": 32,
+  "before_failed": 32,
+  "python_source_preservation": {
+    "src/curriculum.ts": "f9a2177447d2050fba2c72ed17dd57ccc46196f631896ef39520f03bcd3a4de2",
+    "src/components.ts": "9b2b7ea5ffb585e9940ad0cb4d9b0a449823ce09408e37356166d0f097753e11",
+    "src/wasm-worker.ts": "830b6295b3782f35374191f8a7688abc33cfe74da9dbb72ebe25f246a46c9a4d",
+    "src/wasm-curriculum.ts": "b6e5163867a96c68cf15f2b8989ba3a8abcac144512bc42343d6ad0d81df2394",
+    "package-lock.json": "303d0bdcdf496ca9f082183c1e511cb4725b7eb2766aafdc90336fa8e01862bb"
+  }
+}

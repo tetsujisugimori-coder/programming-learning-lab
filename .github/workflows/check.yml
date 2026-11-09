@@ -19,6 +19,9 @@ jobs:
       - run: node tools/verify-python.mjs
       - run: npx playwright install --with-deps chromium webkit
       - run: npm run test:e2e
+        env:
+          E2E_EVIDENCE_ROOT: docs/evidence/wasm-focus-20261109/ci
+          FOCUS_EVIDENCE_DIR: docs/evidence/wasm-focus-20261109/ci/focus
       - uses: actions/upload-artifact@v7.0.2
         if: always()
         with:
