@@ -8,7 +8,9 @@ const root = resolve('dist');
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml' };
 const server = createServer(async (request, response) => {
   try {
-    const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
+    let pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
+    // Serve the same production build under a nested prefix to verify relative assets.
+    if (pathname.startsWith('/nested/course/')) pathname = pathname.slice('/nested/course'.length);
     const path = resolve(root, `.${pathname === '/' ? '/index.html' : pathname}`);
     if (!path.startsWith(root + sep) || !(await stat(path)).isFile()) throw new Error('Not found');
     const content = await readFile(path);

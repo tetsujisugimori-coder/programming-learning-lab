@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=24" },
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "dev": "vite --configLoader native --host 127.0.0.1",
     "build": "tsc --noEmit && vite build --configLoader native",
     "preview": "vite preview --configLoader native --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src tools tests",
-    "test": "node --test tests/curriculum.test.mjs",
+    "test": "node --test tests/*.test.mjs",
     "test:e2e": "node tools/browser-test.mjs",
     "check": "npm run lint && npm run typecheck && npm test && npm run build"
   },
@@ -23,5 +25,10 @@
     "typescript-eslint": "8.72.1",
     "vite": "7.3.7"
   },
-  "overrides": { "minimatch": "11.0.1" }
+  "overrides": {
+    "minimatch": "11.0.1"
+  },
+  "dependencies": {
+    "wabt": "1.0.39"
+  }
 }

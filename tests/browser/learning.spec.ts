@@ -2,7 +2,7 @@ import { test, expect, type Page } from '@playwright/test';
 import { lessons } from '../../src/curriculum';
 import { mkdirSync } from 'node:fs';
 
-const evidence = 'docs/evidence/screenshots';
+const evidence = process.env.E2E_EVIDENCE_ROOT ? `${process.env.E2E_EVIDENCE_ROOT}/python-screenshots` : 'docs/evidence/screenshots';
 mkdirSync(evidence, { recursive: true });
 async function noOverflow(page: Page) {
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
@@ -67,9 +67,9 @@ test('all eight lessons: explicit grading, staged hints, records, round trips an
   await expect(change.locator('.quiz-state')).toContainText('未判定');
   await expect(page.locator('#other-counts')).toContainText('理解チェック正解 7 / 8');
   await page.locator('#show-chapters').click();
-  await expect(page.locator('.chapter-card')).toHaveCount(13);
-  await expect(page.locator('.chapter-card:not(.available) .status-label')).toHaveText(Array(12).fill('準備中'));
-  await expect(page.locator('.chapter-card:not(.available) button, .chapter-card:not(.available) a')).toHaveCount(0);
+  await expect(page.locator('#chapter-list .chapter-card')).toHaveCount(13);
+  await expect(page.locator('#chapter-list .chapter-card:not(.available) .status-label')).toHaveText(Array(12).fill('準備中'));
+  await expect(page.locator('#chapter-list .chapter-card:not(.available) button, #chapter-list .chapter-card:not(.available) a')).toHaveCount(0);
   await noOverflow(page);
   await shot(page, 'chapters', info.project.name);
   await page.locator('#resume-lesson').click();
@@ -137,7 +137,7 @@ test('keyboard split, input composition, actual rem text enlargement and reduced
   await article.locator('.quiz button').focus();
   await page.keyboard.press('Enter');
   await expect(article.locator('.quiz-state')).toContainText('理解チェック正解');
-  if (info.project.name.endsWith('1280')) {
+  if ((page.viewportSize()?.width ?? 0) > 900) {
     const split = article.getByRole('separator');
     await split.focus();
     await page.keyboard.press('ArrowRight');

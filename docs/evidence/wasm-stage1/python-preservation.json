@@ -1,0 +1,28 @@
+[
+  {
+    "path": "src/curriculum.ts",
+    "sha256": "f9a2177447d2050fba2c72ed17dd57ccc46196f631896ef39520f03bcd3a4de2",
+    "matches_main": true
+  },
+  {
+    "path": "src/components.ts",
+    "sha256": "9b2b7ea5ffb585e9940ad0cb4d9b0a449823ce09408e37356166d0f097753e11",
+    "matches_main": true
+  },
+  {
+    "path": "tools/verify-python.mjs",
+    "sha256": "5662f9ad30cb346ad66a9ab2aa310276cda847125ce14461fb94df57fb5f637f",
+    "matches_main": true
+  },
+  {
+    "path": "tests/curriculum.test.mjs",
+    "sha256": "4075be94bfb8f6f43a5305f1759e37c47a0f140ce8a02ffea9b7375c69e00218",
+    "matches_main": true
+  },
+  {
+    "path": "tests/browser/learning.spec.ts",
+    "sha256": "5eefbc601204802425c564cac029347fc32f27f5f9d758ae435f4f0a86fda7dd",
+    "matches_main": false,
+    "reason": "16-condition matrix names no longer encode width at suffix; use actual viewport. Scope 13 Python chapter assertions to Python chapter-list, excluding hidden Wasm list. Assertions and expected values unchanged."
+  }
+]

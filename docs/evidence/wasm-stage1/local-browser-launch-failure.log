@@ -1,0 +1,545 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> programming-learning-lab@0.1.0 test:e2e
+> node tools/browser-test.mjs --project=chromium-390-no-preference --project=webkit-390-no-preference
+
+Owned production preview: http://127.0.0.1:38801
+
+Running 16 tests using 1 worker
+
+(node:55) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:55) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 [chromium-390-no-preference] › tests/browser/learning.spec.ts:14:1 › all eight lessons: explicit grading, staged hints, records, round trips and reload (2ms)
+(node:91) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:91) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   2 [chromium-390-no-preference] › tests/browser/learning.spec.ts:85:1 › copy resolves only after success, rejects honestly, copies exact authored text (1ms)
+(node:127) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:127) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   3 [chromium-390-no-preference] › tests/browser/learning.spec.ts:110:1 › keyboard split, input composition, actual rem text enlargement and reduced motion (2ms)
+(node:163) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:163) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   4 [chromium-390-no-preference] › tests/browser/learning.spec.ts:181:1 › native Clipboard API outcome (no API mock; does not assert OS paste) (2ms)
+(node:199) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:199) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   5 [chromium-390-no-preference] › tests/browser/learning.spec.ts:192:1 › native clipboard readback and paste of command and Python (2ms)
+(node:235) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:235) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   6 [chromium-390-no-preference] › tests/browser/wasm.spec.ts:3:1 › Wasm real execution, failures, independent records and Python preservation (2ms)
+(node:271) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:271) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   7 [chromium-390-no-preference] › tests/browser/wasm.spec.ts:33:1 › unsupported platform and Worker load failure are not success (4ms)
+(node:307) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:307) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   8 [chromium-390-no-preference] › tests/browser/wasm.spec.ts:36:1 › worker load failure is visible (2ms)
+(node:343) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:343) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   9 [webkit-390-no-preference] › tests/browser/learning.spec.ts:14:1 › all eight lessons: explicit grading, staged hints, records, round trips and reload (2ms)
+(node:570) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:570) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  10 [webkit-390-no-preference] › tests/browser/learning.spec.ts:85:1 › copy resolves only after success, rejects honestly, copies exact authored text (2ms)
+(node:797) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:797) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  11 [webkit-390-no-preference] › tests/browser/learning.spec.ts:110:1 › keyboard split, input composition, actual rem text enlargement and reduced motion (2ms)
+(node:1024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  12 [webkit-390-no-preference] › tests/browser/learning.spec.ts:181:1 › native Clipboard API outcome (no API mock; does not assert OS paste) (2ms)
+(node:1251) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1251) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  13 [webkit-390-no-preference] › tests/browser/learning.spec.ts:192:1 › native clipboard readback and paste of command and Python (2ms)
+(node:1478) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1478) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  14 [webkit-390-no-preference] › tests/browser/wasm.spec.ts:3:1 › Wasm real execution, failures, independent records and Python preservation (2ms)
+(node:1705) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1705) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  15 [webkit-390-no-preference] › tests/browser/wasm.spec.ts:33:1 › unsupported platform and Worker load failure are not success (2ms)
+(node:1932) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1932) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  16 [webkit-390-no-preference] › tests/browser/wasm.spec.ts:36:1 › worker load failure is visible (2ms)
+
+
+  1) [chromium-390-no-preference] › tests/browser/learning.spec.ts:14:1 › all eight lessons: explicit grading, staged hints, records, round trips and reload 
+
+    Error: browserType.launch: Target page, context or browser has been closed
+    Browser logs:
+
+    <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-j0vmXG --remote-debugging-pipe --no-startup-window
+    <launched> pid=68
+    [pid=68][err] [68:68:1108/084721.611544:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=68][err] [68:68:1108/084721.611690:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=68][err] [68:68:1108/084721.614071:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)
+    [pid=68][err] [1108/084721.614207:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+    Call log:
+    [2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-j0vmXG --remote-debugging-pipe --no-startup-window[22m
+    [2m  - <launched> pid=68[22m
+    [2m  - [pid=68][err] [68:68:1108/084721.611544:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=68][err] [68:68:1108/084721.611690:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=68][err] [68:68:1108/084721.614071:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)[22m
+    [2m  - [pid=68][err] [1108/084721.614207:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)[22m
+    [2m  - [pid=68] <gracefully close start>[22m
+    [2m  - [pid=68] <kill>[22m
+    [2m  - [pid=68] <will force kill>[22m
+    [2m  - [pid=68] <process did exit: exitCode=null, signal=SIGABRT>[22m
+    [2m  - [pid=68] starting temporary directories cleanup[22m
+    [2m  - [pid=68] finished temporary directories cleanup[22m
+    [2m  - [pid=68] <gracefully close end>[22m
+
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-all-eight-lessons-e8358-ords-round-trips-and-reload-chromium-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-all-eight-lessons-e8358-ords-round-trips-and-reload-chromium-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium-390-no-preference] › tests/browser/learning.spec.ts:85:1 › copy resolves only after success, rejects honestly, copies exact authored text 
+
+    Error: browserType.launch: Target page, context or browser has been closed
+    Browser logs:
+
+    <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-kmfxfv --remote-debugging-pipe --no-startup-window
+    <launched> pid=104
+    [pid=104][err] [104:104:1108/084722.581272:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=104][err] [104:104:1108/084722.581342:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=104][err] [104:104:1108/084722.583360:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)
+    [pid=104][err] [1108/084722.583485:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+    Call log:
+    [2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-kmfxfv --remote-debugging-pipe --no-startup-window[22m
+    [2m  - <launched> pid=104[22m
+    [2m  - [pid=104][err] [104:104:1108/084722.581272:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=104][err] [104:104:1108/084722.581342:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=104][err] [104:104:1108/084722.583360:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)[22m
+    [2m  - [pid=104][err] [1108/084722.583485:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)[22m
+    [2m  - [pid=104] <gracefully close start>[22m
+    [2m  - [pid=104] <kill>[22m
+    [2m  - [pid=104] <will force kill>[22m
+    [2m  - [pid=104] <process did exit: exitCode=null, signal=SIGABRT>[22m
+    [2m  - [pid=104] starting temporary directories cleanup[22m
+    [2m  - [pid=104] finished temporary directories cleanup[22m
+    [2m  - [pid=104] <gracefully close end>[22m
+
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-copy-resolves-onl-a5e81--copies-exact-authored-text-chromium-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-copy-resolves-onl-a5e81--copies-exact-authored-text-chromium-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium-390-no-preference] › tests/browser/learning.spec.ts:110:1 › keyboard split, input composition, actual rem text enlargement and reduced motion 
+
+    Error: browserType.launch: Target page, context or browser has been closed
+    Browser logs:
+
+    <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-qYzASL --remote-debugging-pipe --no-startup-window
+    <launched> pid=140
+    [pid=140][err] [140:140:1108/084723.577656:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=140][err] [140:140:1108/084723.577751:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=140][err] [140:140:1108/084723.579545:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)
+    [pid=140][err] [1108/084723.579667:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+    Call log:
+    [2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-qYzASL --remote-debugging-pipe --no-startup-window[22m
+    [2m  - <launched> pid=140[22m
+    [2m  - [pid=140][err] [140:140:1108/084723.577656:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=140][err] [140:140:1108/084723.577751:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=140][err] [140:140:1108/084723.579545:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)[22m
+    [2m  - [pid=140][err] [1108/084723.579667:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)[22m
+    [2m  - [pid=140] <gracefully close start>[22m
+    [2m  - [pid=140] <kill>[22m
+    [2m  - [pid=140] <will force kill>[22m
+    [2m  - [pid=140] <process did exit: exitCode=null, signal=SIGABRT>[22m
+    [2m  - [pid=140] starting temporary directories cleanup[22m
+    [2m  - [pid=140] finished temporary directories cleanup[22m
+    [2m  - [pid=140] <gracefully close end>[22m
+
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-keyboard-split-in-36758-argement-and-reduced-motion-chromium-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-keyboard-split-in-36758-argement-and-reduced-motion-chromium-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium-390-no-preference] › tests/browser/learning.spec.ts:181:1 › native Clipboard API outcome (no API mock; does not assert OS paste) 
+
+    Error: browserType.launch: Target page, context or browser has been closed
+    Browser logs:
+
+    <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-q7GKur --remote-debugging-pipe --no-startup-window
+    <launched> pid=176
+    [pid=176][err] [176:176:1108/084724.546515:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=176][err] [176:176:1108/084724.546586:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=176][err] [176:176:1108/084724.548384:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)
+    [pid=176][err] [1108/084724.548500:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+    Call log:
+    [2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-q7GKur --remote-debugging-pipe --no-startup-window[22m
+    [2m  - <launched> pid=176[22m
+    [2m  - [pid=176][err] [176:176:1108/084724.546515:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=176][err] [176:176:1108/084724.546586:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=176][err] [176:176:1108/084724.548384:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)[22m
+    [2m  - [pid=176][err] [1108/084724.548500:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)[22m
+    [2m  - [pid=176] <gracefully close start>[22m
+    [2m  - [pid=176] <kill>[22m
+    [2m  - [pid=176] <will force kill>[22m
+    [2m  - [pid=176] <process did exit: exitCode=null, signal=SIGABRT>[22m
+    [2m  - [pid=176] starting temporary directories cleanup[22m
+    [2m  - [pid=176] finished temporary directories cleanup[22m
+    [2m  - [pid=176] <gracefully close end>[22m
+
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-native-Clipboard--44997-k-does-not-assert-OS-paste--chromium-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-native-Clipboard--44997-k-does-not-assert-OS-paste--chromium-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium-390-no-preference] › tests/browser/learning.spec.ts:192:1 › native clipboard readback and paste of command and Python 
+
+    Error: browserType.launch: Target page, context or browser has been closed
+    Browser logs:
+
+    <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-QFJjCw --remote-debugging-pipe --no-startup-window
+    <launched> pid=212
+    [pid=212][err] [212:212:1108/084725.502738:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=212][err] [212:212:1108/084725.502803:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=212][err] [212:212:1108/084725.504425:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)
+    [pid=212][err] [1108/084725.504546:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+    Call log:
+    [2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-QFJjCw --remote-debugging-pipe --no-startup-window[22m
+    [2m  - <launched> pid=212[22m
+    [2m  - [pid=212][err] [212:212:1108/084725.502738:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=212][err] [212:212:1108/084725.502803:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=212][err] [212:212:1108/084725.504425:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)[22m
+    [2m  - [pid=212][err] [1108/084725.504546:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)[22m
+    [2m  - [pid=212] <gracefully close start>[22m
+    [2m  - [pid=212] <kill>[22m
+    [2m  - [pid=212] <will force kill>[22m
+    [2m  - [pid=212] <process did exit: exitCode=null, signal=SIGABRT>[22m
+    [2m  - [pid=212] starting temporary directories cleanup[22m
+    [2m  - [pid=212] finished temporary directories cleanup[22m
+    [2m  - [pid=212] <gracefully close end>[22m
+
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-native-clipboard--c20d4-paste-of-command-and-Python-chromium-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-native-clipboard--c20d4-paste-of-command-and-Python-chromium-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium-390-no-preference] › tests/browser/wasm.spec.ts:3:1 › Wasm real execution, failures, independent records and Python preservation 
+
+    Error: browserType.launch: Target page, context or browser has been closed
+    Browser logs:
+
+    <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-cdlBC5 --remote-debugging-pipe --no-startup-window
+    <launched> pid=248
+    [pid=248][err] [248:248:1108/084726.472841:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=248][err] [248:248:1108/084726.472905:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=248][err] [248:248:1108/084726.474710:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)
+    [pid=248][err] [1108/084726.474885:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+    Call log:
+    [2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-cdlBC5 --remote-debugging-pipe --no-startup-window[22m
+    [2m  - <launched> pid=248[22m
+    [2m  - [pid=248][err] [248:248:1108/084726.472841:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=248][err] [248:248:1108/084726.472905:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=248][err] [248:248:1108/084726.474710:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)[22m
+    [2m  - [pid=248][err] [1108/084726.474885:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)[22m
+    [2m  - [pid=248] <gracefully close start>[22m
+    [2m  - [pid=248] <kill>[22m
+    [2m  - [pid=248] <will force kill>[22m
+    [2m  - [pid=248] <process did exit: exitCode=null, signal=SIGABRT>[22m
+    [2m  - [pid=248] starting temporary directories cleanup[22m
+    [2m  - [pid=248] finished temporary directories cleanup[22m
+    [2m  - [pid=248] <gracefully close end>[22m
+
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/wasm-Wasm-real-execution-f-354e1-rds-and-Python-preservation-chromium-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/wasm-Wasm-real-execution-f-354e1-rds-and-Python-preservation-chromium-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [chromium-390-no-preference] › tests/browser/wasm.spec.ts:33:1 › unsupported platform and Worker load failure are not success 
+
+    Error: browserType.launch: Target page, context or browser has been closed
+    Browser logs:
+
+    <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-z8m6bk --remote-debugging-pipe --no-startup-window
+    <launched> pid=284
+    [pid=284][err] [284:284:1108/084727.457504:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=284][err] [284:284:1108/084727.457576:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=284][err] [284:284:1108/084727.459779:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)
+    [pid=284][err] [1108/084727.459907:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+    Call log:
+    [2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-z8m6bk --remote-debugging-pipe --no-startup-window[22m
+    [2m  - <launched> pid=284[22m
+    [2m  - [pid=284][err] [284:284:1108/084727.457504:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=284][err] [284:284:1108/084727.457576:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=284][err] [284:284:1108/084727.459779:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)[22m
+    [2m  - [pid=284][err] [1108/084727.459907:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)[22m
+    [2m  - [pid=284] <gracefully close start>[22m
+    [2m  - [pid=284] <kill>[22m
+    [2m  - [pid=284] <will force kill>[22m
+    [2m  - [pid=284] <process did exit: exitCode=null, signal=SIGABRT>[22m
+    [2m  - [pid=284] starting temporary directories cleanup[22m
+    [2m  - [pid=284] finished temporary directories cleanup[22m
+    [2m  - [pid=284] <gracefully close end>[22m
+
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/wasm-unsupported-platform--d3607-oad-failure-are-not-success-chromium-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/wasm-unsupported-platform--d3607-oad-failure-are-not-success-chromium-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [chromium-390-no-preference] › tests/browser/wasm.spec.ts:36:1 › worker load failure is visible 
+
+    Error: browserType.launch: Target page, context or browser has been closed
+    Browser logs:
+
+    <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-7ukn0X --remote-debugging-pipe --no-startup-window
+    <launched> pid=320
+    [pid=320][err] [320:320:1108/084728.422962:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=320][err] [320:320:1108/084728.423024:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)
+    [pid=320][err] [320:320:1108/084728.424575:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)
+    [pid=320][err] [1108/084728.424685:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+    Call log:
+    [2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/e622c1e9421e/wasm-tmp/playwright_chromiumdev_profile-7ukn0X --remote-debugging-pipe --no-startup-window[22m
+    [2m  - <launched> pid=320[22m
+    [2m  - [pid=320][err] [320:320:1108/084728.422962:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=320][err] [320:320:1108/084728.423024:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /home/agent/.config/chromium/Crash Reports/settings.dat: Read-only file system (30)[22m
+    [2m  - [pid=320][err] [320:320:1108/084728.424575:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)[22m
+    [2m  - [pid=320][err] [1108/084728.424685:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)[22m
+    [2m  - [pid=320] <gracefully close start>[22m
+    [2m  - [pid=320] <kill>[22m
+    [2m  - [pid=320] <will force kill>[22m
+    [2m  - [pid=320] <process did exit: exitCode=null, signal=SIGABRT>[22m
+    [2m  - [pid=320] starting temporary directories cleanup[22m
+    [2m  - [pid=320] finished temporary directories cleanup[22m
+    [2m  - [pid=320] <gracefully close end>[22m
+
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/wasm-worker-load-failure-is-visible-chromium-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/wasm-worker-load-failure-is-visible-chromium-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [webkit-390-no-preference] › tests/browser/learning.spec.ts:14:1 › all eight lessons: explicit grading, staged hints, records, round trips and reload 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libcairo-script-interpreter.so.2                 ║
+    ║     libhidapi-hidraw.so.0                            ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-all-eight-lessons-e8358-ords-round-trips-and-reload-webkit-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-all-eight-lessons-e8358-ords-round-trips-and-reload-webkit-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [webkit-390-no-preference] › tests/browser/learning.spec.ts:85:1 › copy resolves only after success, rejects honestly, copies exact authored text 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libcairo-script-interpreter.so.2                 ║
+    ║     libhidapi-hidraw.so.0                            ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-copy-resolves-onl-a5e81--copies-exact-authored-text-webkit-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-copy-resolves-onl-a5e81--copies-exact-authored-text-webkit-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [webkit-390-no-preference] › tests/browser/learning.spec.ts:110:1 › keyboard split, input composition, actual rem text enlargement and reduced motion 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libcairo-script-interpreter.so.2                 ║
+    ║     libhidapi-hidraw.so.0                            ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-keyboard-split-in-36758-argement-and-reduced-motion-webkit-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-keyboard-split-in-36758-argement-and-reduced-motion-webkit-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [webkit-390-no-preference] › tests/browser/learning.spec.ts:181:1 › native Clipboard API outcome (no API mock; does not assert OS paste) 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libcairo-script-interpreter.so.2                 ║
+    ║     libhidapi-hidraw.so.0                            ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-native-Clipboard--44997-k-does-not-assert-OS-paste--webkit-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-native-Clipboard--44997-k-does-not-assert-OS-paste--webkit-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [webkit-390-no-preference] › tests/browser/learning.spec.ts:192:1 › native clipboard readback and paste of command and Python 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libcairo-script-interpreter.so.2                 ║
+    ║     libhidapi-hidraw.so.0                            ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/learning-native-clipboard--c20d4-paste-of-command-and-Python-webkit-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/learning-native-clipboard--c20d4-paste-of-command-and-Python-webkit-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [webkit-390-no-preference] › tests/browser/wasm.spec.ts:3:1 › Wasm real execution, failures, independent records and Python preservation 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libcairo-script-interpreter.so.2                 ║
+    ║     libhidapi-hidraw.so.0                            ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/wasm-Wasm-real-execution-f-354e1-rds-and-Python-preservation-webkit-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/wasm-Wasm-real-execution-f-354e1-rds-and-Python-preservation-webkit-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  15) [webkit-390-no-preference] › tests/browser/wasm.spec.ts:33:1 › unsupported platform and Worker load failure are not success 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libcairo-script-interpreter.so.2                 ║
+    ║     libhidapi-hidraw.so.0                            ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/wasm-unsupported-platform--d3607-oad-failure-are-not-success-webkit-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/wasm-unsupported-platform--d3607-oad-failure-are-not-success-webkit-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  16) [webkit-390-no-preference] › tests/browser/wasm.spec.ts:36:1 › worker load failure is visible 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libcairo-script-interpreter.so.2                 ║
+    ║     libhidapi-hidraw.so.0                            ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/wasm-worker-load-failure-is-visible-webkit-390-no-preference/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/wasm-worker-load-failure-is-visible-webkit-390-no-preference/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  16 failed
+    [chromium-390-no-preference] › tests/browser/learning.spec.ts:14:1 › all eight lessons: explicit grading, staged hints, records, round trips and reload 
+    [chromium-390-no-preference] › tests/browser/learning.spec.ts:85:1 › copy resolves only after success, rejects honestly, copies exact authored text 
+    [chromium-390-no-preference] › tests/browser/learning.spec.ts:110:1 › keyboard split, input composition, actual rem text enlargement and reduced motion 
+    [chromium-390-no-preference] › tests/browser/learning.spec.ts:181:1 › native Clipboard API outcome (no API mock; does not assert OS paste) 
+    [chromium-390-no-preference] › tests/browser/learning.spec.ts:192:1 › native clipboard readback and paste of command and Python 
+    [chromium-390-no-preference] › tests/browser/wasm.spec.ts:3:1 › Wasm real execution, failures, independent records and Python preservation 
+    [chromium-390-no-preference] › tests/browser/wasm.spec.ts:33:1 › unsupported platform and Worker load failure are not success 
+    [chromium-390-no-preference] › tests/browser/wasm.spec.ts:36:1 › worker load failure is visible 
+    [webkit-390-no-preference] › tests/browser/learning.spec.ts:14:1 › all eight lessons: explicit grading, staged hints, records, round trips and reload 
+    [webkit-390-no-preference] › tests/browser/learning.spec.ts:85:1 › copy resolves only after success, rejects honestly, copies exact authored text 
+    [webkit-390-no-preference] › tests/browser/learning.spec.ts:110:1 › keyboard split, input composition, actual rem text enlargement and reduced motion 
+    [webkit-390-no-preference] › tests/browser/learning.spec.ts:181:1 › native Clipboard API outcome (no API mock; does not assert OS paste) 
+    [webkit-390-no-preference] › tests/browser/learning.spec.ts:192:1 › native clipboard readback and paste of command and Python 
+    [webkit-390-no-preference] › tests/browser/wasm.spec.ts:3:1 › Wasm real execution, failures, independent records and Python preservation 
+    [webkit-390-no-preference] › tests/browser/wasm.spec.ts:33:1 › unsupported platform and Worker load failure are not success 
+    [webkit-390-no-preference] › tests/browser/wasm.spec.ts:36:1 › worker load failure is visible ──
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
