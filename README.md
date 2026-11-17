@@ -1,5 +1,10 @@
 # プログラム学習 | Programming Learning Lab
 
+## WebAssembly Stage 2（審査中）
+
+第1章に続き、第2章「WATの基本文法」8節と限定概念スタックを追加。[設計・検証範囲](docs/wasm-stage2.md) / [事前契約](docs/wasm-stage2-contract.md)。実Wasmと教材モデルは別物です。正式CI・独立監査の結果はPRに追補し、未検証をPASSにしません。
+
+
 **プログラミングを学びながら、インタラクティブな学習表現を研究し、自分自身の理解を深め続けるプロジェクト。**
 
 Python・Shell（PowerShell / Bash）・TypeScriptを主な題材とし、コードを読んで終わるのではなく、**予想する → 操作する → 実行する → 結果を確かめる → 修正する → 応用する**という体験を重視します。
