@@ -21,3 +21,7 @@ Issue #5。第2章8節を追加。第1章は体験の入口、第2章はmodule/f
 ## 仕様根拠
 
 2026-11-17 UTCにWebAssembly公式specの命令規則を読取確認。https://github.com/WebAssembly/spec/blob/main/document/core/exec/instructions.rst （関数実行、local.get、数値命令）。実行確認はlock固定WABT 1.0.39で別途行う。最新版の仕様読取を実機試験と混同しない。
+
+### 初回正式CIの失敗履歴
+
+提出a1ee9d06のpush run44061987963 / PR run44062040904はいずれも232 PASS・16 FAIL・8 SKIP。追加第2章specのリンク選択がhidden章カード・前節リンクも含む3要素へ一致し、strict-modeで16条件とも停止。製品の演算/型拒否/停止・再実行までは到達していたが、後半のナビ/focus/文字拡大は未到達。選択を可視nav内へ限定し、第1節への復帰focusをその場で確認してから2〜8節へ進むよう修正。期待値・timeout・既存試験は変更しない。旧FAILを成功に読み替えず原artifactを保持する。

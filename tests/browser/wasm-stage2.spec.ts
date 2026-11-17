@@ -24,8 +24,9 @@ test('Stage 2 learning cycle, conceptual model, real execution and protected sta
  await s.locator('.stack-reset').click();await expect(s.locator('.stack-start')).toBeFocused();
  await page.getByRole('link',{name:'Pythonへ戻る'}).click();await expect(s).toBeHidden();
  await page.getByRole('link',{name:'WebAssembly 基本編',exact:true}).click();await expect(page.locator('[data-wasm-lesson="0"]')).toBeVisible();
- await page.locator('a[href="#wasm-2-1"]').click();await expect(s.locator('[data-wasm-memo]')).toHaveValue('右operandを先に取り出す');await expect(s.locator('[data-wasm-read]')).toBeChecked();
- for(let i=1;i<=8;i++){await page.locator(`.wasm-nav a[href="#wasm-2-${i}"]`).click();await expect(page.locator(`[data-wasm-lesson="${i+7}"] h2`)).toBeFocused();}
+ await page.locator('.wasm-nav a[href="#wasm-2-1"]').click();await expect(s.locator('[data-wasm-memo]')).toHaveValue('右operandを先に取り出す');await expect(s.locator('[data-wasm-read]')).toBeChecked();
+ await expect(s.locator('h2')).toBeFocused();
+ for(let i=2;i<=8;i++){await page.locator(`.wasm-nav a[href="#wasm-2-${i}"]`).click();await expect(page.locator(`[data-wasm-lesson="${i+7}"] h2`)).toBeFocused();}
  await page.locator('.wasm-nav a[href="#wasm-2-1"]').click();
  await page.evaluate(()=>document.documentElement.style.fontSize='32px');expect(await page.evaluate(()=>getComputedStyle(document.documentElement).fontSize)).toBe('32px');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);expect(errors).toEqual([]);
