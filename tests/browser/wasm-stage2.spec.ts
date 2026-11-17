@@ -29,6 +29,7 @@ test('Stage 2 learning cycle, conceptual model, real execution and protected sta
  for(let i=2;i<=8;i++){await page.locator(`.wasm-nav a[href="#wasm-2-${i}"]`).click();await expect(page.locator(`[data-wasm-lesson="${i+7}"] h2`)).toBeFocused();}
  await page.locator('.wasm-nav a[href="#wasm-2-1"]').click();
  await page.evaluate(()=>document.documentElement.style.fontSize='32px');expect(await page.evaluate(()=>getComputedStyle(document.documentElement).fontSize)).toBe('32px');
+ await info.attach('zoom-layout', {body:JSON.stringify(await page.evaluate(()=>({viewport:innerWidth,scrollWidth:document.documentElement.scrollWidth,font:getComputedStyle(document.documentElement).fontSize,overflow:Array.from(document.querySelectorAll('#wasm-course *')).filter(e=>e.getBoundingClientRect().right>innerWidth+1).map(e=>({tag:e.tagName,className:e.className,width:e.getBoundingClientRect().width,right:e.getBoundingClientRect().right}))}))),contentType:'application/json'});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);expect(errors).toEqual([]);
  await page.screenshot({path:`${process.env.E2E_EVIDENCE_ROOT || 'docs/evidence/wasm-stage2'}/stage2-${info.project.name}.png`,fullPage:true});
 });

@@ -222,3 +222,10 @@ legend { font-weight: 700; margin-bottom: .9rem; padding: 0; }
 .stack-model select { font: inherit; width: 100%; min-height: 44px; margin-block: .5rem; }
 .stack-model button { margin: .25rem; max-width: 100%; }
 .stack-output { white-space: pre-wrap; }
+/* Reflow without hiding overflow: long tokens and intrinsic form widths must shrink. */
+#wasm-course { overflow-wrap: anywhere; }
+#wasm-course .site-header, #wasm-course .course-bar { flex-wrap: wrap; }
+#wasm-course .site-header > *, #wasm-course .course-bar > *, .wasm-inputs > * { min-width: 0; }
+.wasm-inputs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.wasm-grid input, .wasm-grid textarea { min-width: 0; }
+@media(max-width:700px) { .wasm-inputs { grid-template-columns: minmax(0, 1fr); } }
